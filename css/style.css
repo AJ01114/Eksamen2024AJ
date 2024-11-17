@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 480px) {
+
+    /*Navigationsmeny*/
+
+    nav .header_loddrett {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+
+
+    .søkefelt_header{
+        border:1.5px solid black;
+        border-radius: 16px;  
+        width: 240px;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    .søkefelt_header input {
+        border: none;
+        outline: none;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .søkefelt_header button {
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .header_hjem {
+        margin-top: 10px;
+    }
+
+    .header_produkter {
+        margin-top: 10px;
+    }
+
+    .header_logo {
+        font-size: 36px;
+        margin: -10px;
+    }
+
+    .header_kategorier {
+        margin-bottom: 10px;
+    }
+
+    .header_kontaktoss {
+        margin-bottom: 10px;
+    }
+
+    .header_ikoner {
+        display: flex;
+        justify-content: center;
+        align-items: flex;
+        text-align: center;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .header_ikon {
+        font-size: 20px;
+    }
+
+    /*Falsk slider meny*/
+
+    .falsk_slider {
+        border: 1px solid white;
+        border-radius: 20px;
+        height: auto;
+        padding: 10px;
+        background-image: url(bilder_css/bakgrunnsbilde_slider.jpg);
+        background-size: cover;
+    }
+
+    .falsk_slider_h1 {
+        text-align: right;
+        padding-left: 180px;
+        padding-right: 40px;
+        font-size: 40px;
+        margin-top: 70px;
+    }
+
+    .falsk_slider_p {
+        text-align: right;
+        padding-left: 180px;
+        padding-right: 40px;
+        font-size: 14px;
+    }
+
+    .falsk_slider_knapp_pos {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 40px;     
+    }
+
+    .falsk_slider_knapp {
+        border: none;
+        background-color: white;
+        padding: 15px 15px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    /*Beste produkter side*/
+
+    .beste_produkter {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .beste_produkter_h1 {
+        font-size: 40px;
+    }
+
+    .beste_produkter_p {
+        margin-bottom: 30px;
+    }
+
+    .kategorier_beste_produkter {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .nytt_produkt {
+        background-color: rgb(42, 42, 42);
+        padding: 10px 15px;
+        border: none;
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 100px;
+        gap: 10px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .bestselgere {
+        background-color: white;
+        padding: 10px 15px;
+        border: none;
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 100px;
+        gap: 10px;
+        font-weight: bold;
+    }
+
+    .produkt_boks{
+        border: 1px solid black;
+        height: 300px;
+        width: auto;
+        background-image: url(bilder_css/bilde_producter.jpg);
+    }
+
+
+    img{
+        width: 100px;
+    }
+}
