@@ -166,10 +166,73 @@ body {
     }
 
     .produkt_boks{
-        border: 1px solid black;
+        border: 1px solid rgb(255, 255, 255);
         height: 300px;
         width: auto;
-        background-image: url(bilder_css/bilde_producter.jpg);
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 20px;
+        justify-content: right;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .produkt_boks img{
+        
+        display: grid;
+        width: 100%;
+        height: 100%;
+        
+
+    }
+
+    .produkt_boks i {
+        border: 2px rgb(122, 122, 122, 0.80);
+        border-radius: 30px;
+        padding: 10px 10px;
+        margin-bottom: 250px;
+        margin-right: 10px;
+        color: white;
+        background-color: rgb(122, 122, 122, 0.80);
+        position: absolute;
+    }
+
+    .produkt_informasjon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        
+    }
+
+    .produkt_navn {
+        margin-left: 5px;
+        font-size: 16px;
+        
+    }
+
+    .produkt_pris {
+    font-size: 14px;
+    margin-right: 5px;
+    }
+
+    .produkt_rangering {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 5px;
+        gap: 8px;
+        margin-top: 2px;
+        margin-bottom: 30px;
+    }
+
+    .produkt_rangering i{
+        font-size: 14px;
+    }
+
+    .produkt_rangering p{
+        font-size: 14px;
     }
 
 
