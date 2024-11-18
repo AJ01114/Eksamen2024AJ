@@ -235,8 +235,108 @@ body {
         font-size: 14px;
     }
 
+    .populære_kategorier_sec {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .populære_kategorier_h1{
+       font-size: 35px;
+    }
+
+    .populære_kategorier_boks {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .c_boks1 {
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        height: 300px;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+        overflow: hidden;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .c_boks1 img{
+        
+        display: grid;
+        width: 100%;
+        height: 100%;
+        filter: blur(2px);
+        position: absolute;
+        z-index: -1;
+    }
+
+    .c_boks {
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        height: 300px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+        overflow: hidden;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .c_boks img{
+        
+        display: grid;
+        width: 100%;
+        height: 100%;
+        filter: blur(2px);
+        position: absolute;
+        z-index: -1;
+    }
+
+    .c_boks3 {
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        height: 600px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+        overflow: hidden;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .c_boks3 img{
+        
+        display: grid;
+        width: 100%;
+        height: 100%;
+        filter: blur(2px);
+        position: absolute;
+        z-index: -1;
+    }
+
+    .kategorier {
+        color: rgb(255, 255, 255);
+        z-index: 1;
+
+    }
 
     img{
         width: 100px;
     }
+
 }
