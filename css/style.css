@@ -53,7 +53,6 @@ body {
 
     .header_logo {
         font-size: 36px;
-        margin: -10px;
     }
 
     .header_kategorier {
@@ -205,6 +204,11 @@ body {
         justify-content: space-between;
     }
 
+    .produkt_informasjon a{
+        text-decoration: none;
+        color: black;
+    }
+
     .produkt_navn {
         margin-left: 5px;
         font-size: 16px;
@@ -244,13 +248,6 @@ body {
 
     .populære_kategorier_h1{
        font-size: 35px;
-    }
-
-    .populære_kategorier_boks {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
     }
 
     .c_boks1 {
@@ -391,8 +388,88 @@ body {
         font-weight: bold;
     }
 
-    img{
-        width: 100px;
+    /*footer*/
+
+    footer {
+        border: 1px solid rgb(168, 168, 168);
+        height: 0px;
+        margin-top: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
+
+    footer h1{
+        font-size: 30px;
+        margin-top: 40px;
+        font-weight: lighter;
+    }
+
+    footer p{
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .footer_bokser{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        height: 200px;
+    }
+
+    
+    .footer_kontakt {
+        border: 1px solid rgb(255, 255, 255);
+        width: auto;
+    }
+
+    .footer_kontakt h3 {
+        font-size: 16px;
+        font-weight: lighter;
+        margin-top: -10px;
+    }
+
+
+    .footer_informasjon {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-top: -15px;
+        margin-bottom: -45px;
+    }
+
+    .footer_informasjon p {
+        font-weight: lighter;
+    }
+
+    .footer_informasjon i {
+        font-size: 14px;
+    }
+
+    .footer_media h3{
+        font-size: 16px;
+        font-weight: lighter;
+        margin-top: -70px;
+    }
+
+    .footer_ikons {
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+        
+    }
+
+    .footer_ikon i {
+        color: black;
+        margin-bottom: 100px;
+    }
+
+    
+
+    
+
+    
+
+
 
 }
