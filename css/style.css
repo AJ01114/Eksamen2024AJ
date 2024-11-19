@@ -1,11 +1,13 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 @media (max-width: 480px) {
 
     /*Navigationsmeny*/
+
+    /*sentrerer teksten*/
 
     nav .header_loddrett {
         display: grid;
@@ -14,11 +16,7 @@ body {
         text-align: center;
     }
 
-    nav a {
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-    }
+    /*Søkefelt Navigasjonsmeny*/
 
 
     .søkefelt_header{
@@ -43,6 +41,14 @@ body {
         cursor: pointer;
     }
 
+    /*Farge og plasering på elementene i header*/
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+
     .header_hjem {
         margin-top: 10px;
     }
@@ -63,6 +69,8 @@ body {
         margin-bottom: 10px;
     }
 
+    /*Plassering på ikoner*/
+
     .header_ikoner {
         display: flex;
         justify-content: center;
@@ -78,6 +86,8 @@ body {
 
     /*Falsk slider meny*/
 
+    /*Plassering, størelse og bilde til fake slider*/
+
     .falsk_slider {
         border: 1px solid white;
         border-radius: 20px;
@@ -88,6 +98,8 @@ body {
         margin-left: 5px;
         margin-right: 5px;
     }
+
+    /*Tekst og knapp til fake slider*/
 
     .falsk_slider_h1 {
         text-align: right;
@@ -122,6 +134,8 @@ body {
 
     /*Beste produkter side*/
 
+    /*Overskrift og tekst til beste produkt*/
+
     .beste_produkter {
         display: grid;
         justify-content: center;
@@ -142,6 +156,8 @@ body {
         justify-content: center;
         margin-bottom: 60px;
     }
+
+    /*Knapper til beste produkt*/
 
     .nytt_produkt {
         background-color: rgb(42, 42, 42);
@@ -168,6 +184,8 @@ body {
 
     /*Produktbokser*/
 
+    /*Boksen og bilde til produktkort*/
+
     .produkt_boks{
         border: 1px solid rgb(255, 255, 255);
         height: 300px;
@@ -187,6 +205,8 @@ body {
         height: 100%;
     }
 
+    /*Hjerte knappen til produktkort*/
+
     .produkt_boks i {
         border: 2px rgb(122, 122, 122, 0.80);
         border-radius: 30px;
@@ -197,6 +217,8 @@ body {
         background-color: rgb(122, 122, 122, 0.80);
         position: absolute;
     }
+
+    /*Informasjon til produktkort*/
 
     .produkt_informasjon{
         display: flex;
@@ -219,6 +241,8 @@ body {
     margin-right: 5px;
     }
 
+    /*Rangeringen til produktet*/
+
     .produkt_rangering {
         display: flex;
         align-items: center;
@@ -239,6 +263,8 @@ body {
 
     /*Populære Kategorier*/
 
+    /*Plasering og overskrift til populære kategorier*/
+
     .populære_kategorier_sec {
         display: grid;
         align-items: center;
@@ -249,6 +275,8 @@ body {
     .populære_kategorier_h1{
        font-size: 35px;
     }
+
+    /*Boksene til populære kategorier*/
 
     .c_boks1 {
         border: 1px solid rgb(255, 255, 255);
@@ -386,6 +414,115 @@ body {
         margin-left: 10px;
         font-size: 12px;
         font-weight: bold;
+    }
+
+    /*Checkout*/
+
+    /*sjenerelt checkout*/
+
+    .kantlinjer_checkout{
+        border: 1px solid rgb(215, 215, 215);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    /*1. Shoppingbaggen din*/
+
+    .checkout_tilbake {
+        display: flex;
+        align-items: baseline;
+        gap: 15px;
+    }
+
+    .checkout_tilbake a {
+        text-decoration: none;
+    }
+
+    .checkout_start h1 {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .kantlinjer_checkout h1 {
+        margin-left: 30px;
+        font-size: 30px;
+    }
+
+    .shoppingbag_informasjon_img{
+        width: 200px;
+        height: 200px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .shoppingbag_informasjon img {
+        width: 200px;
+        height: 200px;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    .shoppingbag_informasjon h3 {
+        margin-left: 60px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .shoppingbag_informasjon p {
+        margin-left: 60px;
+        margin-top: -15px;
+    }
+
+    .label_størrelse {
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+
+    .shoppingbag_informasjon select {
+        border: 1px solid rgb(230, 230, 230);
+        text-decoration: none;
+        padding: 15px;
+        background-color: rgb(230, 230, 230);
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .shoppingbag_informasjon input {
+        border: 1px solid rgb(230, 230, 230);
+        padding: 15px;
+        background-color: rgb(255, 255, 255);
+        font-size: 14px;
+        margin-top: 20px;
+        width: 40px;
+    }
+
+    .label_ikon {
+        margin-left: 60px;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .label_ikon i {
+        color: black;
+        font-size: 20px;
+        margin-top: 60px;
+    }
+
+    /*Dine opplysninger*/
+
+    .dine_opplysninger_form {
+        display: grid;
+        justify-content: left;
+        margin-left: 30px;
     }
 
     /*footer*/
