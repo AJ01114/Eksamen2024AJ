@@ -41,10 +41,10 @@
             <h1>1. SHOPPINGBAGEN DIN</h1>
             <section class="shoppingbag_informasjon">
                 <img class="shoppingbag_informasjon_img" src="bilder/sweater.jpg" alt="nike-sko">
-                <h3>PRODUCT NAME</h3>
+                <a href="product.html"><h3>PRODUCT NAME</h3></a>
                 <p>Kr 1999</p>
                 <p>Farge: blå og gul</p>
-                <label class="label_størrelse" for="størelse">størrelse</label>
+                <label class="label_størrelse" for="størelse">Størrelse</label>
                 <select id="størelse">
                     <option value="xs">XS</option>
                     <option value="s">S</option>
@@ -62,7 +62,7 @@
                 
             <section class="shoppingbag_informasjon">
                 <img src="bilder/sweater.jpg" alt="nike-sko">
-                <h3>PRODUCT NAME</h3>
+                <a href="product.html"><h3>PRODUCT NAME</h3></a>
                 <p>Kr 1999</p>
                 <p>Farge: blå og gul</p>
                 <label class="label_størrelse" for="størelse1">størrelse</label>
@@ -83,7 +83,7 @@
             
             <section class="shoppingbag_informasjon">
                 <img src="bilder/sweater.jpg" alt="nike-sko">
-                <h3>PRODUCT NAME</h3>
+                <a href="product.html"><h3>PRODUCT NAME</h3></a>
                 <p>Kr 1999</p>
                 <p>Farge: blå og gul</p>
                 <label class="label_størrelse" for="størelse2">størrelse</label>
@@ -105,8 +105,8 @@
         </section>
         <section class="kantlinjer_checkout">
             <h1>2. DINE OPPLYSNENGER</h1>
-            <p class="levering_adresse">Leveringsadresse</p>
             <form class="dine_opplysninger_form">
+                <p class="levering_adresse">Leveringsadresse</p>
                 <label class="dine_opplysninger_label">
                     <p>Fornavn</p>
                     <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Nora*">
@@ -140,73 +140,78 @@
                 <a class="avbryt_dine_opplysninger" href="#">Avbryt</a>
             </form>
         </section>
-        <section>
-            <h1>3. Levering</h1>
-            <h2>Leveringsvalg</h2>
+        <section class="kantlinjer_checkout">
+            <h1>3. LEVERING</h1>
+            <h3>LEVERINGSVALG</h3>
             <form>
-                <h3>Leveringsalternativer</h3>
-                
-                <section class="leveringsalternativ">
+                <section class="leverings_alternativ">
                     <label for="express-hjemlevering">
-                        <input type="radio" id="express-hjemlevering" name="Levering" value="express-hjemlevering">
-                        <div class="leveringsinformasjon">
-                            <span>Express Hjemlevering</span>
-                            <span>59 kr <i class="fa-solid fa-truck"></i></span>
-                        </div>
-                        <p><strong>3-4 Virkedager</strong></p>
+                        <section class="leverings_informasjon">
+                            <input type="radio" id="express-hjemlevering" name="Levering" value="express-hjemlevering">
+                            <span><strong>Express Hjemlevering</strong></span>
+                        </section>
+                        <p class="leverings_informasjon_p"><strong>3-4 Virkedager</strong></p>
+                        <p>59 kr <i class="fa-solid fa-truck"></i></p>
                         <p>Bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
                     </label>
                 </section>
             
-                <section class="leveringsalternativ">
+                <section class="leverings_alternativ">
                     <label for="express-pickup">
-                        <input type="radio" id="express-pickup" name="levering" value="express-pickup">
-                        <div class="leveringsinformasjon">
-                            <span>Ekspress Pakke til utleveringssted</span>
-                            <span>59 kr <i class="fa-brands fa-dhl"></i></span>
-                        </div>
-                        <p><strong>1-3 Virkedager</strong></p>
+                        <section class="leverings_informasjon">
+                            <input type="radio" id="express-pickup" name="levering" value="express-pickup">
+                            <span><strong>Ekspress Pakke til utleveringssted</strong></span>
+                        </section>
+                        <p class="leverings_informasjon_p"><strong>1-3 Virkedager</strong></p>
+                        <p>59 kr <i class="fa-brands fa-dhl"></i></p>
                     </label>
                 </section>
             
-                <section class="leveringsalternativ">
+                <section class="leverings_alternativ">
                     <label for="standard-hjemlevering">
-                        <input type="radio" id="standard-hjemlevering" name="levering" value="standard-hjemlevering">
-                        <div class="leveringsinformasjon">
-                            <span>Standard Hjemlevering</span>
-                            <span>Gratis <i class="fa-solid fa-box"></i></span>
-                        </div>
-                        <p><strong>5-8 Virkedager</strong></p>
+                        <section class="leverings_informasjon">
+                            <input type="radio" id="standard-hjemlevering" name="levering" value="standard-hjemlevering">
+                            <span><strong>Standard Hjemlevering</strong></span>
+                        </section>
+                        <p class="leverings_informasjon_p"><strong>5-8 Virkedager</strong></p>
+                        <p>Gratis <i class="fa-solid fa-box"></i></p>
                         <p>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
                     </label>
                 </section>
             </form>            
         </section>
-        <section>
+        <section class="kantlinjer_checkout">
             <h1>4. BETALING</h1>
             <section>
-                <h5>Betal med kort<i class="fa-solid fa-credit-card"></i></h5>
-                <form>
+                <h5 class="checkout_betaling_header">BETAL MED KORT<i class="fa-solid fa-credit-card"></i></h5>
+                <form class="checkout_betaling">
                     <label>
-                        Kortnummer 
-                        <input type="number" pattern="[0-9]{16,}" required placeholder="342342****4435">
+                        <p><strong>Kortnummer</strong></p>
+                        <input class="checkout_betaling_input" type="number" pattern="[0-9]{16,}" required placeholder="342342****4435">
                     </label>
                     <label>
-                        utløpsdato
-                        <input type="date" required>
+                        <p><strong>utløpsdato</strong></p>
+                        <input class="checkout_betaling_input" type="date" required>
                     </label>
                     <label>
-                        CVC/CVV
-                        <input type="number" pattern="[0,9]{3,}" required placeholder="CVC/CVV">
+                        <p><strong>CVC/CVV</strong></p>
+                        <input class="checkout_betaling_input" type="number" pattern="[0,9]{3,}" required placeholder="CVC/CVV">
                     </label>
-                    <p>Å betale inkl. mva.</p>
-                    <h3>1 199 kr</h3>
-                    <input type="submit" value="Fullfør kjøp">
+                    <p class="checkout_betaling_line"><strong>Å betale inkl. mva.</strong></p>
+                    <h4 class="checkout_betaling_price">1 199 kr</h4>
+                    <input class="checkout_betaling_submit" type="submit" value="Fullfør kjøp">
                 </form>
-                <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</p>
+                <p class="checkout_betaling_center">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</p>
                 <form>
-                    <input type="checkbox">Ja takk! Send nyhetsbrev til meg.
-                    <input type="checkbox">Jeg ønsker å motta teksmeldinger med tilbud og nyheter.
+                    <section class="checkout_betaling_center_flex">
+                        <input type="checkbox">
+                        <span>Ja takk! Send nyhetsbrev til meg.</span>
+                    </section>
+                    <section class="checkout_betaling_center_flex">
+                        <input type="checkbox">
+                        <span>Jeg ønsker å motta teksmeldinger med tilbud og nyheter.</span>
+                    </section>
+                    
                 </form>
             </section>
         </section>
