@@ -688,6 +688,8 @@ margin-right: 5px;
 
 /*Product*/
 
+/*Toppmeny produkter*/
+
 .produktmeny_topp {
     display: flex;
     justify-content: baseline;
@@ -699,19 +701,29 @@ margin-right: 5px;
     margin-left: 5px;
 }
 
+.produktmeny_topp a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Produktkonteinerene*/
+
 .produktkonteiner {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     margin-left: 5px;
+    margin-right: 5px;
+    max-width: 600px;
 }
 
 .produktkonteiner1 img {
-    width: 100px;
+    width: 100%;
 }
 
 .produktkonteiner2 img {
-    width: 100px;
+    width: 100%;
 }
+
+/*Informasjon til produktet*/
 
 .produktsider_informasjon {
     margin-left: 5px;
@@ -731,6 +743,8 @@ margin-right: 5px;
     font-size: 12px;
 }
 
+/*Velg størrelse boks*/
+
 .produktsider_størrelse {
     max-width: 600px;
     margin-left: 5px;
@@ -747,6 +761,8 @@ margin-right: 5px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
+/*Produksiden sine ikoner og knapp under størrelsevalg*/
 
 .produktsider_ikontekst {
     max-width: 600px;
@@ -771,6 +787,8 @@ margin-right: 5px;
     background-color: white;
     padding: 12px;
 }
+
+/*Produksidens informasjonsbokser*/
 
 .produktsider_informasjonsboks {
     border-top: 1px solid black;
@@ -799,18 +817,79 @@ margin-right: 5px;
     font-size: 12px;
 }
 
+.produktsider_informasjonsboks tr {
+    font-size: 12px;
+}
+
 .produktsider_informasjonsboks_anmeldelse {
     border: 1px solid rgb(230, 230, 230);
     padding: 10px;
     border-radius: 20px;
 }
 
+/*Lignende produkter scrollbar*/
+
 .produktsider_lignende_produkter h1 {
     font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
-.bilder img {
-    width: 100px;
+.produktsider_lignende_produkter a {
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.produktsider_lignende_produkter i {
+    font-size: 12px;
+    
+}
+
+.produktsider_boks {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scroll-snap-type: x mandatory;
+}
+
+.produktsider_kort {
+    border: 1px ;
+    border-radius: 30px;
+    width: 200px;
+    flex-shrink: 0;
+    height: 310px;
+    display: block;
+    justify-content: left;
+    text-align: left;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.produktsider_kort img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.produktsider_boks_informasjon {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.produktsider_stjerner {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 12px;
+    gap: 5px;
+}
+
+.produktsider_kort p {
+    font-size: 12px;
 }
 
 
@@ -891,4 +970,7 @@ footer p{
 }
 
 
+@media (min-width:1024px) and (max-width:1200px) {
+    
+}
 
