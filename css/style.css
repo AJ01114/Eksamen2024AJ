@@ -43,18 +43,25 @@ nav .header_loddrett {
 
 /*Farge og plasering på elementene i header*/
 
-nav a {
+.header_a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header_a a{
     text-decoration: none;
     color: black;
-    font-size: 12px;
 }
 
 .header_hjem {
     margin-top: 10px;
+    font-size: 12px;
 }
 
 .header_produkter {
     margin-top: 10px;
+    font-size: 12px;
 }
 
 .header_logo {
@@ -63,10 +70,12 @@ nav a {
 
 .header_kategorier {
     margin-bottom: 10px;
+    font-size: 12px;
 }
 
 .header_kontaktoss {
     margin-bottom: 10px;
+    font-size: 12px;
 }
 
 /*Plassering på ikoner*/
@@ -82,6 +91,7 @@ nav a {
 
 .header_ikon {
     font-size: 16px;
+    color: black;
 }
 
 /*Falsk slider meny*/
@@ -97,6 +107,10 @@ nav a {
     background-size: cover;
     margin-left: 5px;
     margin-right: 5px;
+    max-width: 970px;
+    justify-self: center;
+    
+    
 }
 
 /*Tekst og knapp til fake slider*/
@@ -190,7 +204,7 @@ nav a {
 .produkt_boks{
     border: 1px solid rgb(255, 255, 255);
     height: 300px;
-    width: auto;
+    max-width: 600px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 20px;
@@ -225,6 +239,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 600px;
 }
 
 .produkt_informasjon a{
@@ -275,6 +290,7 @@ margin-right: 5px;
 
 .populære_kategorier_h1{
    font-size: 35px;
+   width: 400px;
 }
 
 /*Boksene til populære kategorier*/
@@ -345,6 +361,54 @@ margin-right: 5px;
 }
 
 .c_boks3 img{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    position: absolute;
+    z-index: -1;
+}
+
+.c_boks4 {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 300px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.c_boks4 img{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    position: absolute;
+    z-index: -1;
+}
+
+.c_boks5 {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 300px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.c_boks5 img{
     display: grid;
     width: 100%;
     height: 100%;
@@ -951,7 +1015,7 @@ footer p{
     font-size: 14px;
 }
 
-.footer_media h3{
+.footer_ikons h3{
     font-size: 16px;
     font-weight: lighter;
     margin-top: -70px;
@@ -970,7 +1034,400 @@ footer p{
 }
 
 
-@media (min-width:1024px) and (max-width:1200px) {
+@media (min-width:600px) and (max-width:1200px) {
     
+    nav {
+        display: flex;
+        justify-content: center; 
+        
+    }
+    
+    nav .header_loddrett {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%; 
+        max-width: 970px; 
+        margin: 0px;
+    }
+
+    /*Søkefelt Navigasjonsmeny*/
+
+
+    .søkefelt_header{
+        width: 180px;
+        margin: 0px;
+        gap: 20px;
+        font-size: 12px;
+        padding: 5px 0px;
+    }
+
+    .søkefelt_header input {
+        margin: 0px;
+        font-size: 10px;
+    }
+
+    .søkefelt_header button {
+        font-size: 10px;
+    }
+
+    /*Farge og plasering på elementene i header*/
+
+    .header_a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header_hjem {
+        margin: 0px;
+    }
+
+    .header_produkter {
+        margin: 0px;
+    }
+
+    .header_logo {
+        font-size: 26px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header_kategorier {
+        margin: 0px;
+    }
+
+    .header_kontaktoss {
+        margin: 0px; 
+    }
+
+    /*Plassering på ikoner*/
+
+    .header_ikoner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding-bottom: 20px;
+        margin-top:  20px;
+    }
+
+    .header_ikon {
+        font-size: 16px;
+        margin: 0px;
+    }
+
+    .kategorier_beste_produkter {
+        gap: 5px;
+    }
+
+    .nytt_produkt {
+        width: 150px;
+        padding: 15px;
+        gap: 5px;
+    }
+    
+    .bestselgere {
+        width: 150px;
+        padding: 15px;
+        gap: 5px;
+    }
+
+    .produkt_boks{
+        max-width: 330px;
+    }
+
+    .produkt_informasjon{
+        max-width: 330px;
+    }
+
+    .produkt_system{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        max-width: 1000px;
+        justify-self: center;
+        margin: 0px;
+    }
+
+    .populære_kategorier_h1{
+        width: 600px;
+    }
+
+    .kategoribokser {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1000px;
+        justify-self: center;
+    }
+
+    .c_boks1 {
+        border-radius: 20px;
+        height: 330px;
+        max-width: 330px;
+        margin: 0px;
+    }
+    
+    .c_boks {
+        height: 330px;
+        max-width: 327px;
+        margin: 0px;
+        margin-left: -335px;
+    }
+    
+    .c_boks3 {
+        height: 450px;
+        margin: 0px;
+        margin-left: -338px;
+        max-width: 330px;
+    }
+    
+    .c_boks4 {
+        height: 450px;
+        width: 660px;
+        margin-top: -120px;
+        margin-left: 0px;
+    }
+
+    .c_boks5 {
+        height: 330px;
+        width: 330px;
+        margin-left: -5px;
+        
+    }
+
+    .kategorier {
+        color: rgb(255, 255, 255);
+        z-index: 1;
+    }
+
+    .Anmeldelser_overskrift h1 {
+        margin-left: 100px;
+    }
+    
+    
+    .anmeldelser_boks {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .anmeldelser_kort {
+        width: 255px;
+    }
+
+    .kantlinjer_checkout{
+        border: 1px solid rgb(215, 215, 215);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .kantlinjer_checkout h1 {
+        margin-left: 30px;
+        font-size: 24px;
+    }
+    
+    .kantlinjer_checkout h2 {
+        margin-left: 30px;
+    }
+    
+    .kantlinjer_checkout h3 {
+        margin-left: 30px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    
+    /*1. Shoppingbaggen din*/
+    
+    .shoppingbag_informasjon {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .shoppingbag_informasjon_img{
+        width: 200px;
+        height: 200px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    
+    .shoppingbag_informasjon img {
+        width: 200px;
+        height: 200px;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+    
+    .shoppingbag_informasjon h3 {
+        margin-left: 60px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        font-size: 14px;
+        color: black;
+    }
+    
+    .shoppingbag_informasjon a {
+        text-decoration: none;
+    }
+    
+    .shoppingbag_informasjon p {
+        margin-left: 60px;
+        margin-top: -15px;
+        font-size: 12px;
+    }
+    
+    .label_størrelse {
+        margin-left: 60px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
+    .shoppingbag_informasjon select {
+        border: 1px solid rgb(230, 230, 230);
+        text-decoration: none;
+        padding: 10px;
+        background-color: rgb(230, 230, 230);
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    
+    .shoppingbag_informasjon input {
+        border: 1px solid rgb(230, 230, 230);
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        font-size: 12px;
+        margin-top: 20px;
+        width: 40px;
+    }
+    
+    .label_antall {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
+    .label_ikon {
+        margin-left: 60px;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+    
+    .label_ikon i {
+        color: black;
+        font-size: 14px;
+        margin-top: 60px;
+    }
+
+    footer{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .footer_pc {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+    .footer_kontakt {
+        border: 1px solid rgb(255, 255, 255);
+        width: auto;
+    }
+    
+    .footer_kontakt h3 {
+        font-size: 16px;
+        font-weight: lighter;
+        margin-top: -1px;
+    }
+    
+    
+    .footer_informasjon {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-top: -15px;
+        margin-bottom: -45px;
+    }
+    
+    .footer_informasjon p {
+        font-weight: lighter;
+    }
+    
+    .footer_informasjon i {
+        font-size: 14px;
+    }
+
+    .footer_kontakt{
+        margin-right: 230px;
+    }
+
+    .footer_ikons_h3 h3{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+        font-weight: lighter;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        
+        
+    }
+    
+    .footer_ikon i {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin-bottom: 1px;
+        font-size: 16px;
+    }
+    
+    .shoppingbag_informasjon select {
+        border: 1px solid rgb(230, 230, 230);
+        text-decoration: none;
+        padding: 10px;
+        background-color: rgb(230, 230, 230);
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    
+    .shoppingbag_informasjon input {
+        border: 1px solid rgb(230, 230, 230);
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        font-size: 12px;
+        margin-top: 20px;
+        width: 40px;
+    }
+    
+    .label_antall {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
+    .label_ikon {
+        margin-left: 60px;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+    
+    .label_ikon i {
+        color: black;
+        font-size: 14px;
+        margin-top: 60px;
+    }
+
+
 }
 
