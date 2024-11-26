@@ -295,33 +295,7 @@ margin-right: 5px;
 
 /*Boksene til populære kategorier*/
 
-.c_boks1 {
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    height: 300px;
-    margin-bottom: 15px;
-    margin-top: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
-    overflow: hidden;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-}
-
-.c_boks1 img{
-    
-    display: grid;
-    width: 100%;
-    height: 100%;
-    filter: blur(2px);
-    position: absolute;
-    z-index: -1;
-}
-
-.c_boks {
+.c_boks1, .c_boks, .c_boks4, .c_boks5 {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     height: 300px;
@@ -334,15 +308,6 @@ margin-right: 5px;
     justify-content: center;
     text-align: center;
     position: relative;
-}
-
-.c_boks img{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    filter: blur(2px);
-    position: absolute;
-    z-index: -1;
 }
 
 .c_boks3 {
@@ -360,66 +325,39 @@ margin-right: 5px;
     position: relative;
 }
 
-.c_boks3 img{
-    display: grid;
+.c_boks1::before, .c_boks::before, .c_boks3::before, .c_boks4::before, .c_boks5::before {
+    content: url(myimage.jpg);
+    position: absolute;
     width: 100%;
     height: 100%;
-    filter: blur(2px);
-    position: absolute;
-    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); 
 }
 
-.c_boks4 {
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    height: 300px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    overflow: hidden;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
+.c_boks1::before {
+    background-image: url(bilder_css/Kategori_1.jpg);
 }
 
-.c_boks4 img{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    filter: blur(2px);
-    position: absolute;
-    z-index: -1;
+.c_boks::before {
+    background-image: url(bilder_css/kategori_2.jpg);
 }
 
-.c_boks5 {
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    height: 300px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    overflow: hidden;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
+.c_boks3::before {
+    background-image: url(bilder_css/kategori_3.jpg);
 }
 
-.c_boks5 img{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    filter: blur(2px);
-    position: absolute;
-    z-index: -1;
+.c_boks4::before {
+    background-image: url(bilder_css/kategori_4.jpg);
+}
+
+.c_boks5::before {
+    background-image: url(bilder_css/kategori_5.jpg);
 }
 
 .kategorier {
     color: rgb(255, 255, 255);
-    z-index: 1;
+    filter: none;
 }
 
 /*komentarer*/
@@ -1172,10 +1110,14 @@ footer p{
     .produkt_system{
         display: grid;
         grid-template-columns: auto auto auto;
-        max-width: 1000px;
         justify-self: center;
-        margin: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
+
+    /*Kategorier*/
 
     .populære_kategorier_h1{
         width: 600px;
@@ -1185,7 +1127,7 @@ footer p{
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 1000px;
+        max-width: 1015px;
         justify-self: center;
     }
 
@@ -1272,7 +1214,18 @@ footer p{
 
     .kantlinjer_checkout1 h1 {
         text-align: center;
-        margin-left: -440px;
+        margin-left: -453px;
+    }
+
+    .kantlinjer_checkout1 h3 {
+        text-align: center;
+        margin-left: -483px;
+    }
+
+    .kantlinjer_checkout1 h5 {
+        justify-self: center;
+        margin-left: -469px;
+
     }
     
 
@@ -1351,7 +1304,7 @@ footer p{
         margin-bottom: 15px;
         box-sizing: border-box;
     }
-    
+
     .dine_opplysninger_form section {
         display: flex;
         justify-content: space-between;
@@ -1380,6 +1333,52 @@ footer p{
         max-width: 579px;
         justify-self: center;
         margin: 10px auto;
+    }
+
+    .leverings_pc{
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        
+
+    }
+
+    /*checkout*/
+
+    .checkout_betaling_u_c{
+        display: flex;
+        align-items: last baseline;
+    }
+
+    .checkout_betaling_input {
+        padding: 15px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    .checkout_betaling {
+        max-width: 600px;
+        margin: 0 auto; 
+        padding: 20px;
+    }
+
+    .checkout_betaling section {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    .checkout_betaling section label {
+        flex: 1;
+    }
+
+    .checkout_betaling_submit {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin-top: 30px;
     }
 
     /*Footer*/

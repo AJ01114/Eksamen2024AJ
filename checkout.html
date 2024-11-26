@@ -203,14 +203,16 @@
                         <p><strong>Kortnummer</strong></p>
                         <input class="checkout_betaling_input" type="number" pattern="[0-9]{16,}" required placeholder="342342****4435">
                     </label>
-                    <label>
-                        <p><strong>utløpsdato</strong></p>
-                        <input class="checkout_betaling_input" type="date" required>
-                    </label>
-                    <label>
-                        <p><strong>CVC/CVV</strong></p>
-                        <input class="checkout_betaling_input" type="number" pattern="[0,9]{3,}" required placeholder="CVC/CVV">
-                    </label>
+                    <section class="checkout_betaling_u_c">
+                        <label>
+                            <p><strong>utløpsdato</strong></p>
+                            <input class="checkout_betaling_input" type="date" required>
+                        </label>
+                        <label>
+                            <p><strong>CVC/CVV</strong></p>
+                            <input class="checkout_betaling_input" type="number" pattern="[0,9]{3,}" required placeholder="CVC/CVV">
+                        </label>
+                    </section>
                     <p class="checkout_betaling_line"><strong>Å betale inkl. mva.</strong></p>
                     <h4 class="checkout_betaling_price">1 199 kr</h4>
                     <input class="checkout_betaling_submit" type="submit" value="Fullfør kjøp">
