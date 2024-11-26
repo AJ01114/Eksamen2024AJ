@@ -10,24 +10,28 @@
 </head>
 <body>
     <header>
-        <nav>
-            <section class="header_loddrett">
-                <form class="søkefelt_header">
-                    <input type="text" placeholder="søk her">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
-                </form>
-                <a class="header_hjem" href="index.html">Hjem</a>
-                <a class="header_produkter" href="index.html#beste_produkter">Produkter</a>
-                <a class="header_logo" href="index.html"> <h1>Logo</h1></a>
-                <a class="header_kategorier" href="index.html#populære_kategorier">Kategorier</a>
-                <a class="header_kontaktoss" href="index.html#kontakt_oss">Kontakt oss</a>
-            </section>
-            <section class="header_ikoner">
-            <a class="header_ikon" href=""><i class="fa-regular fa-user"></i></a>
-            <a class="header_ikon" href="#"><i class="fa-regular fa-heart"></i></a>
-            <a class="header_ikon" href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            </section>
-        </nav>
+        <header>
+            <nav>
+                <section class="header_loddrett">
+                    <form class="søkefelt_header">
+                        <input type="text" placeholder="søk her">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                    </form>
+                    <section class="header_a">
+                        <a class="header_hjem" href="index.html">Hjem</a>
+                        <a class="header_produkter" href="index.html#beste_produkter">Produkter</a>
+                        <a class="header_logo" href="index.html"> <h1><strong>Logo</strong></h1></a>
+                        <a class="header_kategorier" href="index.html#populære_kategorier">Kategorier</a>
+                        <a class="header_kontaktoss" href="index.html#kontakt_oss">Kontakt oss</a>
+                    </section>
+                    <section class="header_ikoner">
+                        <a class="header_ikon" href=""><i class="fa-regular fa-user"></i></a>
+                        <a class="header_ikon" href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a class="header_ikon" href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </section>
+                </section>
+            </nav>
+    </header>
 </header>
     <main>
         <section class="checkout_tilbake">
@@ -41,64 +45,70 @@
             <h1>1. SHOPPINGBAGEN DIN</h1>
             <section class="shoppingbag_informasjon">
                 <img class="shoppingbag_informasjon_img" src="bilder/sweater.jpg" alt="nike-sko">
-                <a href="product.html"><h3>PRODUCT NAME</h3></a>
-                <p>Kr 1999</p>
-                <p>Farge: blå og gul</p>
-                <label class="label_størrelse" for="størelse">Størrelse</label>
-                <select id="størelse">
-                    <option value="xs">XS</option>
-                    <option value="s">S</option>
-                    <option value="m">M</option>
-                    <option value="l">L</option>
-                    <option value="xl">XL</option>
-                </select>
-                <label class="label_antall" for="quantity">Antall</label>
-                <input type="number" id="quantity" value="1" min="1" max="999"> 
+                <section>
+                    <a href="product.html"><h3>PRODUCT NAME</h3></a>
+                    <p>Kr 1999</p>
+                    <p>Farge: blå og gul</p>
+                    <label class="label_størrelse" for="størelse">Størrelse</label>
+                    <select id="størelse">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <label class="label_antall" for="quantity">Antall</label>
+                    <input type="number" id="quantity" value="1" min="1" max="999"> 
+                </section>
                 <section class="label_ikon">
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-solid fa-trash-can"></i></a> 
+                    <a href="#"><i class="fa-solid fa-trash"></i></a> 
                 </section> 
             </section>
                 
             <section class="shoppingbag_informasjon">
                 <img src="bilder/sweater.jpg" alt="nike-sko">
-                <a href="product.html"><h3>PRODUCT NAME</h3></a>
-                <p>Kr 1999</p>
-                <p>Farge: blå og gul</p>
-                <label class="label_størrelse" for="størelse1">størrelse</label>
-                <select id="størelse1">
-                    <option value="xs">XS</option>
-                    <option value="s">S</option>
-                    <option value="m">M</option>
-                    <option value="l">L</option>
-                    <option value="xl">XL</option>
-                </select>
-                <label class="label_antall" for="quantity2">Antall</label>
-                <input type="number" id="quantity2" value="1" min="1" max="999"> 
+                <section>
+                    <a href="product.html"><h3>PRODUCT NAME</h3></a>
+                    <p>Kr 1999</p>
+                    <p>Farge: blå og gul</p>
+                    <label class="label_størrelse" for="størelse1">Størrelse</label>
+                    <select id="størelse1">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <label class="label_antall" for="quantity2">Antall</label>
+                    <input type="number" id="quantity2" value="1" min="1" max="999">
+                </section> 
                 <section class="label_ikon">
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-solid fa-trash-can"></i></a> 
+                    <a href="#"><i class="fa-solid fa-trash"></i></i></a> 
                 </section> 
             </section>
             
             <section class="shoppingbag_informasjon">
                 <img src="bilder/sweater.jpg" alt="nike-sko">
-                <a href="product.html"><h3>PRODUCT NAME</h3></a>
-                <p>Kr 1999</p>
-                <p>Farge: blå og gul</p>
-                <label class="label_størrelse" for="størelse2">størrelse</label>
-                <select id="størelse2">
-                    <option value="xs">XS</option>
-                    <option value="s">S</option>
-                    <option value="m">M</option>
-                    <option value="l">L</option>
-                    <option value="xl">XL</option>
-                </select>
-                <label class="label_antall" for="quantity3">Antall</label>
-                <input type="number" id="quantity3" value="1" min="1" max="999"> 
+                <section>
+                    <a href="product.html"><h3>PRODUCT NAME</h3></a>
+                    <p>Kr 1999</p>
+                    <p>Farge: blå og gul</p>
+                    <label class="label_størrelse" for="størelse2">Størrelse</label>
+                    <select id="størelse2">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <label class="label_antall" for="quantity3">Antall</label>
+                    <input type="number" id="quantity3" value="1" min="1" max="999"> 
+                </section>
                 <section class="label_ikon">
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-solid fa-trash-can"></i></a> 
+                    <a href="#"><i class="fa-solid fa-trash"></i></a> 
                 </section> 
             </section>
             
@@ -106,27 +116,31 @@
         <section class="kantlinjer_checkout">
             <h1>2. DINE OPPLYSNENGER</h1>
             <form class="dine_opplysninger_form">
-                <p class="levering_adresse">Leveringsadresse</p>
-                <label class="dine_opplysninger_label">
-                    <p>Fornavn</p>
-                    <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Nora*">
-                </label>
-                <label>
-                    <p>Etternavn</p>
-                    <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Nordman">
-                </label>
+                <section class="dine_opplysninger_f_e">
+                    <label class="dine_opplysninger_label">
+                        <p class="levering_adresse">Leveringsadresse</p>
+                        <p>Fornavn</p>
+                        <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Nora*">
+                    </label>
+                    <label>
+                        <p>Etternavn</p>
+                        <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Nordman">
+                    </label>
+                </section>
                 <label>
                     <p>Gateadresse</p>
                     <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ0-9]{2,}" required placeholder="B R A Veien 4*">
                 </label>
-                <label>
-                    <p>Postnummer</p>
-                    <input class="kontaktinformasjon_ind" type="number" Pattern="[0-9]{4,4}" required placeholder="1752*">
-                </label>
-                <label>
-                    <p>Poststed</p>
-                    <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Halden*">
-                </label>
+                <section>
+                    <label>
+                        <p>Postnummer</p>
+                        <input class="kontaktinformasjon_ind" type="number" Pattern="[0-9]{4,4}" required placeholder="1752*">
+                    </label>
+                    <label>
+                        <p>Poststed</p>
+                        <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Halden*">
+                    </label>
+                </section>
                 <p class="kontakt_informasjon">Kontaktinformasjon</p>   
                 <label>
                     <p>E-post</p>
