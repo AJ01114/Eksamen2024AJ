@@ -98,7 +98,7 @@ nav .header_loddrett {
 
 /*Plassering, størelse og bilde til fake slider*/
 
-.falsk_slider {
+.falsk_slider1 {
     border: 1px solid white;
     border-radius: 20px;
     height: auto;
@@ -115,28 +115,28 @@ nav .header_loddrett {
 
 /*Tekst og knapp til fake slider*/
 
-.falsk_slider_h1 {
+.falsk_slider1_h1 {
     text-align: right;
-    padding-left: 180px;
-    padding-right: 40px;
-    font-size: 34px;
+    padding-left: 165px;
+    padding-right: 30px;
+    font-size: 36px;
     margin-top: 70px;
 }
 
-.falsk_slider_p {
+.falsk_slider1_p {
     text-align: right;
-    padding-left: 180px;
-    padding-right: 40px;
+    padding-left: 165px;
+    padding-right: 30px;
     font-size: 12px;
 }
 
-.falsk_slider_knapp_pos {
+.falsk_slider1_knapp_pos {
     display: flex;
     justify-content: flex-end;
-    padding-right: 40px;     
+    padding-right: 30px;     
 }
 
-.falsk_slider_knapp {
+.falsk_slider1_knapp {
     border: none;
     background-color: white;
     padding: 15px 15px;
@@ -144,6 +144,10 @@ nav .header_loddrett {
     margin-bottom: 30px;
     font-size: 12px;
     cursor: pointer;
+}
+
+.falsk_slider2, .falsk_slider3 {
+    display: none;
 }
 
 /*Beste produkter side*/
@@ -157,7 +161,7 @@ nav .header_loddrett {
 }
 
 .beste_produkter_h1 {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .beste_produkter_p {
@@ -199,39 +203,34 @@ nav .header_loddrett {
 
 /*Produktbokser*/
 
-/*Boksen og bilde til produktkort*/
-
-.produkt_boks{
-    border: 1px solid rgb(255, 255, 255);
-    height: 300px;
-    max-width: 600px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 20px;
-    justify-content: right;
+.produkt_boks {
+    position: relative; 
+    display: inline-block; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    width: 100%; 
+    max-width: 750px; 
+  }
+  
+  .produkt_boks img {
     display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-.produkt_boks img{ 
-    display: grid;
     width: 100%;
-    height: 100%;
-}
+    height: auto; 
+    border-radius: 10px; 
+  }
+  
+  /*Hjerte ikon til produktboks*/
 
-/*Hjerte knappen til produktkort*/
-
-.produkt_boks i {
-    border: 2px rgb(122, 122, 122, 0.80);
-    border-radius: 30px;
-    padding: 10px 10px;
-    margin-bottom: 250px;
-    margin-right: 10px;
-    color: white;
-    background-color: rgb(122, 122, 122, 0.80);
+  .produkt_boks i {
     position: absolute;
-}
+    top: 10px;
+    right: 10px;
+    font-size: 24px; 
+    color: #fff; 
+    padding: 10px;
+    border-radius: 50%; 
+    background-color: rgb(122, 122, 122, 0.80);
+  }
 
 /*Informasjon til produktkort*/
 
@@ -239,7 +238,8 @@ nav .header_loddrett {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 600px;
+    max-width: 750px;
+    
 }
 
 .produkt_informasjon a{
@@ -289,8 +289,8 @@ margin-right: 5px;
 }
 
 .populære_kategorier_h1{
-   font-size: 35px;
-   width: 400px;
+   font-size: 28px;
+   width: 300px;
 }
 
 /*Boksene til populære kategorier*/
@@ -358,6 +358,7 @@ margin-right: 5px;
 .kategorier {
     color: rgb(255, 255, 255);
     filter: none;
+    z-index: 1;
 }
 
 /*komentarer*/
@@ -650,7 +651,7 @@ margin-right: 5px;
     margin-left: 30px;
     margin-right: 60px;
     text-align: left;
-    max-width: 600px;
+    max-width: 750px;
 }
 
 .checkout_betaling_input {
@@ -735,20 +736,7 @@ margin-right: 5px;
 
 /*Produktkonteinerene*/
 
-.produktkonteiner {
-    display: grid;
-    margin-left: 5px;
-    margin-right: 5px;
-    max-width: 600px;
-}
 
-.produktkonteiner1 img {
-    width: 100%;
-}
-
-.produktkonteiner2 img {
-    width: 100%;
-}
 
 /*Informasjon til produktet*/
 
@@ -961,6 +949,12 @@ footer p{
     margin-top: -10px;
 }
 
+.footer_kontakt1 h3 {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: -10px;
+}
+
 
 .footer_informasjon {
     display: flex;
@@ -997,7 +991,7 @@ footer p{
 }
 
 
-@media (min-width:600px) and (max-width:1200px) {
+@media (min-width:750px) and (max-width:1200px) {
     
     nav {
         display: flex;
@@ -1135,34 +1129,31 @@ footer p{
         border-radius: 20px;
         height: 330px;
         max-width: 330px;
-        margin: 0px;
     }
     
     .c_boks {
         height: 330px;
-        max-width: 327px;
+        max-width: 330px;
         margin: 0px;
-        margin-left: -335px;
     }
     
     .c_boks3 {
         height: 450px;
         margin: 0px;
-        margin-left: -338px;
         max-width: 330px;
     }
     
     .c_boks4 {
         height: 450px;
-        width: 660px;
+        max-width: 660px;
+        grid-column: span 2;
         margin-top: -120px;
-        margin-left: 0px;
     }
 
     .c_boks5 {
         height: 330px;
         width: 330px;
-        margin-left: -5px;
+        margin: 0px;
         
     }
 
@@ -1388,11 +1379,12 @@ footer p{
         margin-left: 100px;
     }
 
-    .footer_pc {
+    .footer_pc, .footer_bokser{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
+        margin: 0px;
     }
     
     
@@ -1401,10 +1393,11 @@ footer p{
         width: auto;
     }
     
-    .footer_kontakt h3 {
+    .footer_kontakt h3, .footer_kontakt1 h3 {
         font-size: 16px;
         font-weight: lighter;
-        margin-top: -1px;
+        margin-top: 0px;
+        align-items: center;
     }
     
     
@@ -1424,11 +1417,17 @@ footer p{
         font-size: 14px;
     }
 
-    .footer_kontakt{
-        margin-right: 230px;
+    .footer_kontakt1{
+        margin-right: 200px;
     }
 
-    .footer_ikons_h3 h3{
+    .footer_ikons {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer_ikons h3{
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -1437,17 +1436,26 @@ footer p{
         font-weight: lighter;
         margin-top: 0px;
         margin-bottom: 10px;
-        
-        
     }
-    
+
+    .footer_ikon {
+        display: flex;
+        gap: 2px; 
+    }
+
     .footer_ikon i {
+        margin: 0px;
+    }
+
+    .footer_ikon a{
         display: flex;
         flex-direction: row;
-        color: black;
-        margin-bottom: 1px;
-        font-size: 16px;
+        align-items: center;
+        text-decoration: none;
+
     }
+
+  
 
 
 }
