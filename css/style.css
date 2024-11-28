@@ -146,7 +146,7 @@ nav .header_loddrett {
     cursor: pointer;
 }
 
-.falsk_slider2, .falsk_slider3 {
+.falsk_slider2, .falsk_slider3, .pil_høyre, .pil_venstre{
     display: none;
 }
 
@@ -580,27 +580,32 @@ margin-right: 5px;
     margin-left: 30px;
 }
 
-.dine_opplysninger_form p{
+.dine_opplysninger_form label{
     font-size: 12px;
+}
+
+.dine_opplysninger_label {
+    display: grid;
+}
+
+.kontakt_informasjon_gap {
+    margin-top: 100px;
 }
 
 .kontaktinformasjon_ind {
     border: 1px solid rgb(215, 215, 215);
     text-decoration: none;
     padding: 15px;
-    margin-top: -20px;
     width: 100%;
     font-size: 12px;
 }
 
 .levering_adresse {
     margin-top: 70px;
-    margin-bottom: -10px;
 }
 
 .kontakt_informasjon {
     margin-top: 100px;
-    margin-bottom: -10px;
 }
 
 .lagre_kontaktinformasjon {
@@ -658,7 +663,6 @@ margin-right: 5px;
     border: 1px solid rgb(215, 215, 215);
     text-decoration: none;
     padding: 15px; 
-    margin-top: -20px;
     width: 100%;
     font-size: 12px;
     
@@ -720,7 +724,6 @@ margin-right: 5px;
 
 .produktmeny_topp {
     display: flex;
-    justify-content: baseline;
     align-items: center;
     gap: 20px;
     font-size: 12px;
@@ -736,7 +739,37 @@ margin-right: 5px;
 
 /*Produktkonteinerene*/
 
-
+.produktkonteiner {
+    position: relative;
+    display: flex; 
+    align-items: flex-start; 
+    gap: 15px; 
+    max-width: 650px; 
+    margin: 0 auto; 
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .produktkonteiner_aside {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+  }
+  
+  .bilder_små {
+    width: 130px; 
+    height: 130px; 
+    
+  }
+  
+  .stort_bilde {
+    flex: 1; 
+  }
+  
+  .bilder_stor{
+    width: 100%; 
+    height: 420px; 
+  }
 
 /*Informasjon til produktet*/
 
@@ -761,7 +794,7 @@ margin-right: 5px;
 /*Velg størrelse boks*/
 
 .produktsider_størrelse {
-    max-width: 600px;
+    max-width: 440px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -780,7 +813,7 @@ margin-right: 5px;
 /*Produksiden sine ikoner og knapp under størrelsevalg*/
 
 .produktsider_ikontekst {
-    max-width: 600px;
+    max-width: 440px;
     margin-left: 5px;
     margin-right: 5px;
     display: flex;
@@ -809,7 +842,14 @@ margin-right: 5px;
     border-top: 1px solid black;
     margin-left: 5px;
     margin-right: 5px;
-    padding: 15px;
+    padding: 30px 15px;
+}
+
+.produktsider_informasjonsboks1 {
+    border-top: 1px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 15px;
 }
 
 .produktsider_informasjonsboks summary {
@@ -820,6 +860,16 @@ margin-right: 5px;
     font-size: 12px;
 }
 
+.produktsider_informasjonsboks1 summary {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+
+
 .produktsider_informasjonsboks ul li {
     font-size: 12px;
 }
@@ -828,7 +878,15 @@ margin-right: 5px;
     font-size: 12px;
 }
 
+.produktsider_informasjonsboks1 p {
+    font-size: 12px;
+}
+
 .produktsider_informasjonsboks i {
+    font-size: 12px;
+}
+
+.produktsider_informasjonsboks1 i {
     font-size: 12px;
 }
 
@@ -879,6 +937,8 @@ margin-right: 5px;
     text-align: left;
     margin-right: 5px;
     margin-left: 20px;
+    position: relative;
+    display: inline-block;
 }
 
 .produktsider_kort img {
@@ -888,6 +948,20 @@ margin-right: 5px;
     object-fit: cover;
     margin-top: 10px;
 }
+  
+  /*Hjerte ikon til produktboks*/
+
+  .produktsider_hjerte i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px; 
+    color: #ffffff; 
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 50%; 
+    background-color: rgb(122, 122, 122, 0.80);
+  }
 
 .produktsider_boks_informasjon {
     display: flex;
@@ -991,7 +1065,7 @@ footer p{
 }
 
 
-@media (min-width:750px) and (max-width:1200px) {
+@media (min-width:650px) and (max-width:1200px) {
     
     nav {
         display: flex;
@@ -1005,7 +1079,7 @@ footer p{
         justify-content: space-between; 
         align-items: center; 
         width: 100%; 
-        max-width: 1000px; 
+        max-width: 950px; 
         margin: 0px;
     }
 
@@ -1077,6 +1151,155 @@ footer p{
         margin: 0px;
     }
 
+    .falsk_slider_pos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+
+    }
+
+    .falsk_slider {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scroll-snap-type: x mandatory;
+    max-width: 980px;
+    gap: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 0px;
+    
+    }
+
+    .falsk_slider1, .falsk_slider2, .falsk_slider3{
+    border: 1px ;
+    border-radius: 30px;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    height: 550px;
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+    gap: 20px;
+    max-width: 970px;
+    overflow:hidden;
+    padding: 0px;
+    
+    }
+
+    .falsk_slider2{
+        background-image: url(bilder_css/bakgrunnsbilde2_slider.jpg);
+        margin: 0px;
+    }
+
+    .falsk_slider3{
+        background-image: url(bilder_css/bakgrunnsbilde3_slider.jpg);
+        margin: 0px;
+    }
+
+    .falsk_slider1_h1 {
+        max-width: 300px;
+        text-align: right;
+        justify-self: right;
+        
+    }
+
+    .falsk_slider1_p {
+        max-width: 300px;
+        justify-self: right;
+    }
+
+    .falsk_slider2_h1 {
+        text-align: left;
+        max-width: 300px;
+        font-size: 36px;
+        padding-left: 30px;
+        margin-top: 70px;
+    }
+    
+    .falsk_slider2_p {
+        text-align: left;
+        max-width: 300px;
+        padding-left: 30px;
+        font-size: 12px;
+    }
+    
+    .falsk_slider2_knapp_pos {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;     
+    }
+    
+    .falsk_slider2_knapp {
+        border: none;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 15px 15px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .falsk_slider3_h1 {
+        justify-self: right;
+        text-align: right;
+        max-width: 300px;
+        font-size: 36px;
+        padding-right: 30px;
+        margin-top: 70px;
+        color: white;
+    }
+    
+    .falsk_slider3_p {
+        justify-self: right;
+        text-align: right;
+        max-width: 300px;
+        padding-right: 30px;
+        font-size: 12px;
+        color: white;
+    }
+    
+    .falsk_slider3_knapp_pos {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 30px;     
+    }
+    
+    .falsk_slider3_knapp {
+        border: none;
+        background-color: white;
+        color: black;
+        padding: 15px 15px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .pil_høyre{
+        position: absolute;
+        top: 50%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        display: unset;
+        z-index: 2; 
+        right: 140px; 
+    } 
+    
+    .pil_venstre {
+        position: absolute;
+        top: 50%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        display: unset;
+        left: 140px; 
+      }
+      
     .kategorier_beste_produkter {
         gap: 5px;
     }
@@ -1109,57 +1332,7 @@ footer p{
         margin-bottom: 0px;
         margin-left: 1rem;
         margin-right: 1rem;
-    }
-
-    /*Kategorier*/
-
-    .populære_kategorier_h1{
-        width: 600px;
-    }
-
-    .kategoribokser {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 1015px;
-        justify-self: center;
-    }
-
-    .c_boks1 {
-        border-radius: 20px;
-        height: 330px;
-        max-width: 330px;
-    }
-    
-    .c_boks {
-        height: 330px;
-        max-width: 330px;
-        margin: 0px;
-    }
-    
-    .c_boks3 {
-        height: 450px;
-        margin: 0px;
-        max-width: 330px;
-    }
-    
-    .c_boks4 {
-        height: 450px;
-        max-width: 660px;
-        grid-column: span 2;
-        margin-top: -120px;
-    }
-
-    .c_boks5 {
-        height: 330px;
-        width: 330px;
-        margin: 0px;
-        
-    }
-
-    .kategorier {
-        color: rgb(255, 255, 255);
-        z-index: 1;
+        gap: 10px;
     }
 
     .Anmeldelser_overskrift h1 {
@@ -1262,6 +1435,7 @@ footer p{
         display: flex;
         flex-direction: column;
         margin-left: 120px;
+        margin-top: -100px;
         
     }
 
@@ -1324,15 +1498,20 @@ footer p{
         max-width: 579px;
         justify-self: center;
         margin: 10px auto;
+        position: relative;
     }
 
     .leverings_pc{
         display: flex;
         flex-direction: row;
         align-content: space-between;
-        
-
     }
+
+    .p_pris {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        }
 
     /*checkout*/
 
@@ -1371,6 +1550,40 @@ footer p{
         font-size: 16px;
         margin-top: 30px;
     }
+
+    /*produktside*/
+
+    .produktmeny_topp{
+        margin-left: 130px;
+    }
+    
+    .produktconteiner_pc {
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .bilder_små {
+        width: 180px; 
+        height: 180px; 
+        
+      }
+      
+      .bilder_stor{
+        max-width: 700px;; 
+        height: 570px; 
+      }
+
+      .produkt_pc{
+        width: 400px;
+      }
+
+      .produktsider_boks{
+        margin-left: 90px;
+        margin-right: 90px;
+      }
 
     /*Footer*/
 
@@ -1440,7 +1653,7 @@ footer p{
 
     .footer_ikon {
         display: flex;
-        gap: 2px; 
+        gap: 25px; 
     }
 
     .footer_ikon i {
@@ -1452,11 +1665,116 @@ footer p{
         flex-direction: row;
         align-items: center;
         text-decoration: none;
+        
+    }
+}
 
+@media (min-width:1024px) and (max-width:1200px) {
+    /*Kategorier*/
+
+    .populære_kategorier_h1{
+        width: 600px;
     }
 
-  
+    .kategoribokser {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 950px;
+        margin-right: 60px;
+        justify-self: center;
+    }
 
+    .c_boks1 {
+        border-radius: 20px;
+        height: 330px;
+        max-width: 330px;
+    }
+    
+    .c_boks {
+        height: 330px;
+        max-width: 330px;
+        margin: 0px;
+    }
+    
+    .c_boks3 {
+        height: 450px;
+        margin: 0px;
+        max-width: 330px;
+    }
+    
+    .c_boks4 {
+        height: 450px;
+        width: 665px;
+        grid-column: span 2;
+        margin-top: -115px;
+    }
 
+    .c_boks5 {
+        height: 330px;
+        width: 330px;
+        margin: 0px;
+        margin-top: 5px;
+        
+    }
+
+    .kategorier {
+        color: rgb(255, 255, 255);
+        z-index: 1;
+    }
 }
+
+
+@media (min-width:600px) and (max-width:1024px) {
+    .kategoribokser {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr 1fr 1fr; 
+        max-width: 1000px;
+        gap: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      
+      .c_boks1 {
+        height: 330px;
+        width: 100%; 
+        margin: 0px;
+      }
+      
+      .c_boks {
+        height: 330px;
+        width: 100%; 
+        margin: 0px;
+      }
+      
+      .c_boks3 {
+        grid-column: span 2; 
+        height: 450px;
+        width: 100%;
+        margin: 0px;
+        margin-top: -60px;
+      }
+      
+      .c_boks4 {
+        height: 330px;
+        width: 100%; 
+        margin: 0px;
+      }
+      
+      .c_boks5 {
+        height: 330px;
+        width: 100%; 
+        margin: 0px;
+      }
+
+      .pil_høyre{
+        right: 40px; 
+    } 
+    
+    .pil_venstre {
+        left: 40px; 
+      }
+}
+
 
