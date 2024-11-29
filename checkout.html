@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="nb" itemscope itemtype="https://schema.org/WebPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Dette er en nettbutikk som tilbyr et bredt utvalg av klær til gode priser. Rask levering og enkel retur.">
+    <title>Logo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta itemprop="name" content="Logo - Nettbutikk for klær">
+    <meta itemprop="description" content="Finn de nyeste klærne hos Logo. Rask levering og gode priser.">
 </head>
 <body>
     <header>
-        <nav>
+        <nav  itemscope itemtype="https://schema.org/BreadcrumbList">
             <section class="header_loddrett">
                 <form class="søkefelt_header">
-                    <input type="text" placeholder="søk her">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                    <label for="search"></label>
+                    <input id="search" type="search" placeholder="søk her">
+                    <button aria-label="søke" type="submit"><i aria-label="viser at du kan trykke for og søke" class="fa-solid fa-magnifying-glass"></i> </button>
                 </form>
                 <section class="header_a">
-                    <a class="header_hjem" href="index.html">Hjem</a>
-                    <a class="header_produkter" href="index.html#beste_produkter">Produkter</a>
-                    <a class="header_logo" href="index.html"> <h1><strong>Logo</strong></h1></a>
-                    <a class="header_kategorier" href="index.html#populære_kategorier">Kategorier</a>
-                    <a class="header_kontaktoss" href="index.html#kontakt_oss">Kontakt oss</a>
+                    <a class="header_hjem" href="index.html" aria-label="Hjem knappen på forsiden">Hjem</a>
+                    <a class="header_produkter" href="index.html#beste_produkter" aria-label="produkt knappen på forsiden">Produkter</a>
+                    <a class="header_logo" href="index.html" aria-label="logo for hjemskjermen"> <h1><strong>Logo</strong></h1></a>
+                    <a class="header_kategorier" href="index.html#populære_kategorier" aria-label="kategori kanppen på forsiden">Kategorier</a>
+                    <a class="header_kontaktoss" href="index.html#kontakt_oss" aria-label="kontakt oss knappen på forsiden">Kontakt oss</a>
                 </section>
                 <section class="header_ikoner">
-                    <a class="header_ikon" href=""><i class="fa-regular fa-user"></i></a>
-                    <a class="header_ikon" href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a class="header_ikon" href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="header_ikon" href=""><i class="fa-regular fa-user" aria-label="bruker ikon for og se brukeren din"></i></a>
+                    <a class="header_ikon" href="#"><i class="fa-regular fa-heart" aria-label="likte produkter ikon for og se dine likte produkter"></i></a>
+                    <a class="header_ikon" href="checkout.html"><i class="fa-solid fa-cart-shopping" aria-label="kasseside ikon for og gå til kassesiden og betale"></i></a>
                 </section>
             </section>
         </nav>
     </header>
     <main>
         <section class="checkout_tilbake">
-            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <a aria-label="pil for og gå tilbake for og handle" href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
             <a href="index.html"><p>Fortsett og handle</p></a>
         </section>
         <section class="checkout_start">
@@ -41,33 +44,35 @@
         </section>
         <section class="kantlinjer_checkout">
             <h1>1. SHOPPINGBAGEN DIN</h1>
-            <section class="shoppingbag_informasjon">
-                <img class="shoppingbag_informasjon_img" src="bilder/sweater.jpg" alt="nike-sko">
-                <section>
-                    <a href="product.html"><h3>PRODUCT NAME</h3></a>
-                    <p>Kr 1999</p>
-                    <p>Farge: blå og gul</p>
-                    <label class="label_størrelse" for="størelse">Størrelse</label>
-                    <select id="størelse">
-                        <option value="xs">XS</option>
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="xl">XL</option>
-                    </select>
-                    <label class="label_antall" for="quantity">Antall</label>
-                    <input type="number" id="quantity" value="1" min="1" max="999"> 
+            <article itemscope itemtype="https://schema.org/Product">
+                <section class="shoppingbag_informasjon">
+                    <img src="bilder/sweater.jpg" alt="nike-sko">
+                    <section>
+                        <a href="product.html"><h2>PRODUCT NAME</h2></a>
+                        <p>Kr 1999</p>
+                        <p>Farge: blå og gul</p>
+                        <label class="label_størrelse" for="størelse">Størrelse</label>
+                        <select id="størelse">
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                        <label class="label_antall" for="quantity1">Antall</label>
+                        <input type="number" id="quantity1" name="quantity" value="1" min="1" max="999" aria-label="antall produkter"> 
+                    </section>
+                    <section class="label_ikon">
+                        <a aria-label="for og like produktet" href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a aria-label="for og fjerne ikonet fra checkout" href="#"><i class="fa-solid fa-trash"></i></a> 
+                    </section> 
                 </section>
-                <section class="label_ikon">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-solid fa-trash"></i></a> 
-                </section> 
-            </section>
+            </article>
                 
             <section class="shoppingbag_informasjon">
                 <img src="bilder/sweater.jpg" alt="nike-sko">
                 <section>
-                    <a href="product.html"><h3>PRODUCT NAME</h3></a>
+                    <a href="product.html"><h2>PRODUCT NAME</h2></a>
                     <p>Kr 1999</p>
                     <p>Farge: blå og gul</p>
                     <label class="label_størrelse" for="størelse1">Størrelse</label>
@@ -79,18 +84,18 @@
                         <option value="xl">XL</option>
                     </select>
                     <label class="label_antall" for="quantity2">Antall</label>
-                    <input type="number" id="quantity2" value="1" min="1" max="999">
+                    <input type="number" id="quantity2" name="quantity" value="1" min="1" max="999" aria-label="antall produkter"> 
                 </section> 
                 <section class="label_ikon">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-solid fa-trash"></i></a> 
+                    <a aria-label="for og like produktet" href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a aria-label="for og fjerne ikonet fra checkout" href="#"><i class="fa-solid fa-trash"></i></a> 
                 </section> 
             </section>
             
             <section class="shoppingbag_informasjon">
                 <img src="bilder/sweater.jpg" alt="nike-sko">
                 <section>
-                    <a href="product.html"><h3>PRODUCT NAME</h3></a>
+                    <a href="product.html"><h2>PRODUCT NAME</h2></a>
                     <p>Kr 1999</p>
                     <p>Farge: blå og gul</p>
                     <label class="label_størrelse" for="størelse2">Størrelse</label>
@@ -102,11 +107,11 @@
                         <option value="xl">XL</option>
                     </select>
                     <label class="label_antall" for="quantity3">Antall</label>
-                    <input type="number" id="quantity3" value="1" min="1" max="999"> 
+                    <input type="number" id="quantity3" name="quantity" value="1" min="1" max="999" aria-label="antall produkter">  
                 </section>
                 <section class="label_ikon">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-solid fa-trash"></i></a> 
+                    <a aria-label="for og like produktet" href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a aria-label="for og fjerne ikonet fra checkout" href="#"><i class="fa-solid fa-trash"></i></a> 
                 </section> 
             </section>
             
@@ -115,46 +120,48 @@
             <h1>2. DINE OPPLYSNENGER</h1>
             <form class="dine_opplysninger_form">
                 <section class="dine_opplysninger_f_e">
-                    <label class="dine_opplysninger_label">
+                    <label class="dine_opplysninger_label" for="fornavn">
                         <strong class="levering_adresse">Leveringsadresse</strong>
                         Fornavn
-                        <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Nora*">
+                        <input class="kontaktinformasjon_ind" id="fornavn" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Nora*" maxlength="50" minlength="2" title="Kun bokstaver og mellomrom er tillatt.">
                     </label>
-                    <label>
+                    <label for="etternavn">
                         Etternavn
-                        <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Nordman">
+                        <input class="kontaktinformasjon_ind" id="etternavn" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Nordman" maxlength="50" minlength="2" title="Kun bokstaver og mellomrom er tillatt.">
                     </label>
                 </section>
-                    <label>
+                    <label for="gateadresse">
                         Gateadresse
-                        <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ0-9]{2,}" required placeholder="B R A Veien 4*">
+                        <input class="kontaktinformasjon_ind" id="gateadresse" type="text" pattern="[A-Za-zæøåÆØÅ0-9]{2,}" required placeholder="B R A Veien 4*" maxlength="100" minlength="2" title="Kun bokstaver, tall og mellomrom er tillatt.">
                     </label>
                 <section>
-                    <label>
+                    <label for="postnummer">
                         Postnummer
-                        <input class="kontaktinformasjon_ind" type="number" required placeholder="1752*">
+                        <input class="kontaktinformasjon_ind" id="postnummer" type="number" required placeholder="1752*">
                     </label>
-                    <label>
+                    <label for="poststed">
                         Poststed
-                        <input class="kontaktinformasjon_ind" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Halden*">
+                        <input class="kontaktinformasjon_ind" id="poststed" type="text" pattern="[A-Za-zæøåÆØÅ]{2,}" required placeholder="Halden*" maxlength="50" minlength="2" title="Kun bokstaver og mellomrom er tillatt.">
                     </label>
                 </section>  
-                <label class="dine_opplysninger_label">
+                <label class="dine_opplysninger_label" for="epost">
                     <strong class="kontakt_informasjon">Kontaktinformasjon</strong>
                     E-post
-                    <input class="kontaktinformasjon_ind" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="noranordman@hiof.no..">
+                    <input class="kontaktinformasjon_ind" id="epost" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="noranordman@hiof.no.." title="Skriv inn en gyldig e-postadresse.">
                 </label>
-                <label>
+                <label for="telefon">
                     Telefon
-                    <input class="kontaktinformasjon_ind" type="tel" pattern="[0-9]{8,12}" required placeholder="+4749***018"> 
+                    <input class="kontaktinformasjon_ind" id="telefon" type="tel" pattern="[0-9]{8,12}" required placeholder="+4749***018" maxlength="12" title="Skriv inn et gyldig telefonnummer."> 
                 </label>
-                <input class="lagre_kontaktinformasjon" type="submit" value="Lagre"> 
+                <label class="lagre_kontaktinformasjon_label" for="sendinn">
+                <input class="lagre_kontaktinformasjon" id="sendinn" type="submit" value="Lagre"> 
+                </label>
                 <a class="avbryt_dine_opplysninger" href="#">Avbryt</a>
             </form>
         </section>
         <section class="kantlinjer_checkout1">
             <h1>3. LEVERING</h1>
-            <h3>LEVERINGSVALG</h3>
+            <h2>LEVERINGSVALG</h2>
             <form>
                 <section class="leverings_alternativ">
                     <label for="express-hjemlevering">
@@ -191,39 +198,48 @@
         <section class="kantlinjer_checkout1">
             <h1>4. BETALING</h1>
             <section>
-                <h5 class="checkout_betaling_header">BETAL MED KORT<i class="fa-solid fa-credit-card"></i></h5>
+                <p class="checkout_betaling_header">BETAL MED KORT<i class="fa-solid fa-credit-card"></i></p>
                 <form class="checkout_betaling">
-                    <label>
+                    <label for="kortnummer">
                         <strong>Kortnummer</strong>
-                        <input class="checkout_betaling_input" type="number" required placeholder="342342****4435">
+                        <input class="checkout_betaling_input" id="kortnummer" type="number" required name="kortnummer" placeholder="342342****4435" title="Skriv inn et 16-sifret kortnummer.">
                     </label>
                     <section class="checkout_betaling_u_c">
-                        <label>
+                        <label for="utløpsdato">
                             <strong>utløpsdato</strong>
-                            <input class="checkout_betaling_input" type="date" required>
+                            <input class="checkout_betaling_input" id="utløpsdato" type="date" name="utløpsdato" required title="Velg en gyldig utløpsdato.">
                         </label>
-                        <label>
+                        <label for="cvcogcvv">
                             <strong>CVC/CVV</strong>
-                            <input class="checkout_betaling_input" type="number" required placeholder="CVC/CVV">
+                            <input class="checkout_betaling_input" id="cvcogcvv" type="number" name="cvc" required placeholder="CVC/CVV" title="Skriv inn CVC/CVV-koden (3-4 siffer).">
                         </label>
                     </section>
                     <p class="checkout_betaling_line"><strong>Å betale inkl. mva.</strong></p>
-                    <h4 class="checkout_betaling_price">1 199 kr</h4>
-                    <input class="checkout_betaling_submit" type="submit" value="Fullfør kjøp">
+                    <h2 class="checkout_betaling_price">1 199 kr</h2>
+                    <label class="checkout_betaling_label" for="fulførekjøpet">
+                    <input class="checkout_betaling_submit" id="fulførekjøpet" type="submit" value="Fullfør kjøp">
+                    </label>
                 </form>
                 <p class="checkout_betaling_center">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</p>
                 <form>
                     <section class="checkout_betaling_center_flex">
-                        <input type="checkbox">
+                        <label for="godtavilkårene">
+                        <input type="checkbox" id="godtavilkårene">
                         <span>ja, jeg godtar vilkårene.</span>
+                        </label>
                     </section>
                     <section class="checkout_betaling_center_flex">
-                        <input type="checkbox">
+                        <label for="sendenyhetsbrev">
+                        <input type="checkbox" id="sendenyhetsbrev">
                         <span>Ja takk! Send nyhetsbrev til meg.</span>
+                        </label>
                     </section>
                     
                 </form>
             </section>
+        </section>
+        <section class="hopptiltopp">
+            <a href="checkout.html" aria-label="pil pekt oppover for og gå hele veien til toppen"><i class="fa-solid fa-arrow-up"></i></a>
         </section>
     </main>
     <footer id="kontakt_oss">
@@ -233,27 +249,27 @@
         <section class="footer_pc">
             <section class="footer_bokser">
                 <section class="footer_kontakt1">
-                    <h3>KONTAKT</h3>
+                    <h2>KONTAKT</h2>
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i aria-hidden="true" class="fa-solid fa-location-dot"></i>
                         <p><strong>Adresse:</strong> </p>
                         <p>B R A Veien 4, 1757 Halden</p>
                     </section>
 
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-phone"></i>
+                        <i aria-hidden="true" class="fa-solid fa-phone"></i>
                         <p><strong>Telefon:</strong></p>
                         <p>69 60 80 00</p>
                     </section>
 
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i aria-hidden="true" class="fa-solid fa-envelope"></i>
                         <p><strong>E-post:</strong></p>
                         <p>halden@hiof.no</p>
                     </section>
 
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-clock"></i>
+                        <i aria-hidden="true" class="fa-solid fa-clock"></i>
                         <p><strong>Åpningstider:</strong></p>
                         <p>stenger 15:00</p>
                     </section>
@@ -269,15 +285,18 @@
                     <section class="footer_informasjon">
                         <p>Kontakt oss</p>
                     </section>
+                    <section class="footer_informasjon">
+                        <a href="WCAG-sjekklist/ WCAG-sjekkliste.pdf">WCAG-sjekklist</a>
+                    </section>
                 </section>
             </section>
             <section class="footer_ikons">
                 <h3>SOSIALE MEDIER</h3>
                 <section class="footer_ikon">
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://www.instagram.com/" aria-label="instagram ikon for footer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" aria-label="facebook ikon for footer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/" aria-label="linkedin ikon for footer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://no.pinterest.com/" aria-label="pinterest ikon for footer"><i class="fa-brands fa-pinterest"></i></a>
                 </section>
             </section>
         </section>

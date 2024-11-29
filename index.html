@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="nb" itemscope itemtype="https://schema.org/WebPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Dette er en nettbutikk som tilbyr et bredt utvalg av klær til gode priser. Rask levering og enkel retur.">
+    <title>Logo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta itemprop="name" content="Klesnett AS - Nettbutikk for klær">
+    <meta itemprop="description" content="Finn de nyeste klærne hos Logo. Rask levering og gode priser.">
 </head>
 <body>
     <header>
-            <nav>
+            <nav  itemscope itemtype="https://schema.org/BreadcrumbList">
                 <section class="header_loddrett">
                     <form class="søkefelt_header">
-                        <input type="text" placeholder="søk her">
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                        <label for="search"></label>
+                        <input id="search" type="search" placeholder="søk her">
+                        <button aria-label="søke" type="submit"><i aria-label="viser at du kan trykke for og søke" class="fa-solid fa-magnifying-glass"></i> </button>
                     </form>
                     <section class="header_a">
-                        <a class="header_hjem" href="index.html">Hjem</a>
-                        <a class="header_produkter" href="index.html#beste_produkter">Produkter</a>
-                        <a class="header_logo" href="index.html"> <h1><strong>Logo</strong></h1></a>
-                        <a class="header_kategorier" href="index.html#populære_kategorier">Kategorier</a>
-                        <a class="header_kontaktoss" href="index.html#kontakt_oss">Kontakt oss</a>
+                        <a class="header_hjem" href="index.html" aria-label="Hjem knappen på forsiden">Hjem</a>
+                        <a class="header_produkter" href="index.html#beste_produkter" aria-label="produkt knappen på forsiden">Produkter</a>
+                        <a class="header_logo" href="index.html" aria-label="logo for hjemskjermen"> <h1><strong>Logo</strong></h1></a>
+                        <a class="header_kategorier" href="index.html#populære_kategorier" aria-label="kategori kanppen på forsiden">Kategorier</a>
+                        <a class="header_kontaktoss" href="index.html#kontakt_oss" aria-label="kontakt oss knappen på forsiden">Kontakt oss</a>
                     </section>
                     <section class="header_ikoner">
-                        <a class="header_ikon" href=""><i class="fa-regular fa-user"></i></a>
-                        <a class="header_ikon" href="#"><i class="fa-regular fa-heart"></i></a>
-                        <a class="header_ikon" href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a class="header_ikon" href=""><i class="fa-regular fa-user" aria-label="bruker ikon for og se brukeren din"></i></a>
+                        <a class="header_ikon" href="#"><i class="fa-regular fa-heart" aria-label="likte produkter ikon for og se dine likte produkter"></i></a>
+                        <a class="header_ikon" href="checkout.html"><i class="fa-solid fa-cart-shopping" aria-label="kasseside ikon for og gå til kassesiden og betale"></i></a>
                     </section>
                 </section>
             </nav>
@@ -35,30 +38,33 @@
         <section class="falsk_slider_pos">
             <section class="falsk_slider">
                 <section class="pil_høyre">
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right" aria-label="svart pil som peker til høyre for en slider"></i>
                 </section>
                 <section class="pil_venstre">
-                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-left" aria-label="svart pil som peker til venstre for en slider"></i>
                 </section>
                 <section class="falsk_slider1">
-                    <h1 class="falsk_slider1_h1">Turpise valiquet massa fermen sodales ligula eu amet. </h1>
+                    <h1 class="falsk_slider1_h1">Turpise valiquet massa fermen sodales </h1>
                     <p class="falsk_slider1_p"> <strong>Leo sit luctus ligula aliquet ipsum pulvinar. Per fames dignissim egestas arcu quisque pretium. Congue aptent ligula mauris mi aliquam. Lacinia class malesuada libero nulla magna venenatis nec laoreet torquent. Pretium neque risus ad habitasse quis dolor. </strong></p>
                     <section class="falsk_slider1_knapp_pos">
-                        <input class="falsk_slider1_knapp" type="button" value="Les mer">
+                        <label for="lesmer"></label>
+                        <input id="lesmer" class="falsk_slider1_knapp" type="button" value="Les mer">
                     </section>
                 </section>
                 <section class="falsk_slider2">
-                    <h1 class="falsk_slider2_h1">Turpis aliquet massa fermen sodales ligula eu amet. </h1>
+                    <h3 class="falsk_slider2_h1">Turpis aliquet massa fermen sodales ligula eu amet. </h3>
                     <p class="falsk_slider2_p"> <strong>Leo sit luctus ligula aliquet ipsum pulvinar. Per fames dignissim egestas arcu quisque pretium. Congue aptent ligula mauris mi aliquam. Lacinia class malesuada libero nulla magna venenatis nec laoreet torquent. Pretium neque risus ad habitasse quis dolor. </strong></p>
                     <section class="falsk_slider2_knapp_pos">
-                        <input class="falsk_slider2_knapp" type="button" value="Les mer">
+                        <label for="lesmere"></label>
+                        <input id="lesmere" class="falsk_slider2_knapp" type="button" value="Les mer">
                     </section>
                 </section>
                 <section class="falsk_slider3">
                     <h1 class="falsk_slider3_h1">Turpis aliquet massa fermen sodales ligula eu amet. </h1>
                     <p class="falsk_slider3_p"> <strong>Leo sit luctus ligula aliquet ipsum pulvinar. Per fames dignissim egestas arcu quisque pretium. Congue aptent ligula mauris mi aliquam. Lacinia class malesuada libero nulla magna venenatis nec laoreet torquent. Pretium neque risus ad habitasse quis dolor. </strong></p>
                     <section class="falsk_slider3_knapp_pos">
-                        <input class="falsk_slider3_knapp" type="button" value="Les mer">
+                        <label for="lesmer2"></label>
+                        <input id="lesmer2" class="falsk_slider3_knapp" type="button" value="Les mer">
                     </section>
                 </section>
             </section>
@@ -67,23 +73,23 @@
             <h1 class="beste_produkter_h1">Våre mest populære produkter</h1>
             <p class="beste_produkter_p">Oppdag det beste av det beste</p>
             <section class="kategorier_beste_produkter">
-                <button class="nytt_produkt">New product</button>
-                <button class="bestselgere">Special price</button>
-                <button class="bestselgere">Best Sellers</button>
+                <button class="nytt_produkt" aria-label="knapp for nytt produkt">New product</button>
+                <button class="bestselgere" aria-label="knapp for tilbud">Special price</button>
+                <button class="bestselgere" aria-label="knap for best selgere">Best Sellers</button>
             </section>
         </section>
 
         <section class="produkt_system" id="product">
-            <article>
+            <article itemscope itemtype="https://schema.org/Product">
                 <section class="produkt_boks">
-                    <img src="bilder/bilde_producter.jpg" alt="produkt">
+                    <img src="bilder/bilde_producter.jpg" alt="produkt" itemprop="image">
                     <i class="fa-regular fa-heart"></i>
                 </section>
                 <section class="produkt_informasjon">
-                    <a href="product.html"><p class="produkt_navn"><strong>Product name</strong></p></a>
+                    <a href="product.html"><p class="produkt_navn" itemprop="name"><strong>Product name</strong></p></a>
                     <p class="produkt_pris"><strong>kr 1999</strong></p>
                 </section>
-                <section class="produkt_rangering">
+                <section class="produkt_rangering" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -181,7 +187,7 @@
                     <i class="fa-regular fa-star"></i>
                     <p><strong>842 reviews</strong></p>
                 </section>
-            </article>
+            </article>  
         </section>
 
         <section class="populære_kategorier_sec" id="populære_kategorier">
@@ -191,19 +197,19 @@
         
         <section class="kategoribokser" id="catagories">
             <article class="c_boks1">
-                <h3 class="kategorier">CATEGORY 1</h3>
+                <h2 class="kategorier">CATEGORY 1</h2>
             </article>
             <article class="c_boks">
-                <h3 class="kategorier">CATEGORY 2</h3>
+                <h2 class="kategorier">CATEGORY 2</h2>
             </article>
             <article class="c_boks3">
-                <h3 class="kategorier">CATEGORY 3</h3>
+                <h2 class="kategorier">CATEGORY 3</h2>
             </article>
             <article class="c_boks4">
-                <h3 class="kategorier">CATEGORY 4</h3>
+                <h2 class="kategorier">CATEGORY 4</h2>
             </article>
             <article class="c_boks5">
-                <h3 class="kategorier">CATEGORY 5</h3>
+                <h2 class="kategorier">CATEGORY 5</h2>
             </article>
         </section>
         <section id="reviews">
@@ -214,8 +220,8 @@
         <section  class="anmeldelser_boks">
             <section class="anmeldelser_kort">
                 <img src="bilder/Mann-anmeldelser.jpg" alt="mann">
-                <h4>Rober Labrador</h4>
-                <section class="anmeldelser_stjerner">
+                <h2>Rober Labrador</h2>
+                <section aria-label="Rangering: 3 av 5 stjerner" class="anmeldelser_stjerner">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -227,8 +233,8 @@
 
             <section class="anmeldelser_kort">
                 <img src="bilder/Mann-anmeldelser.jpg" alt="mann">
-                <h4>Rober Labrador</h4>
-                <section class="anmeldelser_stjerner">
+                <h2>Rober Labrador</h2>
+                <section aria-label="Rangering: 3 av 5 stjerner" class="anmeldelser_stjerner">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -240,8 +246,8 @@
 
             <section class="anmeldelser_kort">
                 <img src="bilder/Mann-anmeldelser.jpg" alt="mann">
-                <h4>Rober Labrador</h4>
-                <section class="anmeldelser_stjerner">
+                <h2>Rober Labrador</h2>
+                <section aria-label="Rangering: 3 av 5 stjerner" class="anmeldelser_stjerner">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -253,8 +259,8 @@
 
             <section class="anmeldelser_kort">
                 <img src="bilder/Mann-anmeldelser.jpg" alt="mann">
-                <h4>Rober Labrador</h4>
-                <section class="anmeldelser_stjerner">
+                <h2>Rober Labrador</h2>
+                <section aria-label="Rangering: 3 av 5 stjerner" class="anmeldelser_stjerner">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -264,6 +270,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </section>
         </section>
+        <section class="hopptiltopp">
+            <a href="index.html" aria-label="pil pekt oppover for og gå hele veien til toppen"><i class="fa-solid fa-arrow-up"></i></a>
+        </section>
     </main>
     <footer id="kontakt_oss">
         <h1>Logo</h1>
@@ -272,27 +281,27 @@
         <section class="footer_pc">
             <section class="footer_bokser">
                 <section class="footer_kontakt1">
-                    <h3>KONTAKT</h3>
+                    <h2>KONTAKT</h2>
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i aria-hidden="true" class="fa-solid fa-location-dot"></i>
                         <p><strong>Adresse:</strong> </p>
                         <p>B R A Veien 4, 1757 Halden</p>
                     </section>
 
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-phone"></i>
+                        <i aria-hidden="true" class="fa-solid fa-phone"></i>
                         <p><strong>Telefon:</strong></p>
                         <p>69 60 80 00</p>
                     </section>
 
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i aria-hidden="true" class="fa-solid fa-envelope"></i>
                         <p><strong>E-post:</strong></p>
                         <p>halden@hiof.no</p>
                     </section>
 
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-clock"></i>
+                        <i aria-hidden="true" class="fa-solid fa-clock"></i>
                         <p><strong>Åpningstider:</strong></p>
                         <p>stenger 15:00</p>
                     </section>
@@ -308,15 +317,18 @@
                     <section class="footer_informasjon">
                         <p>Kontakt oss</p>
                     </section>
+                    <section class="footer_informasjon">
+                        <a href="WCAG-sjekklist/ WCAG-sjekkliste.pdf">WCAG-sjekklist</a>
+                    </section>
                 </section>
             </section>
             <section class="footer_ikons">
                 <h3>SOSIALE MEDIER</h3>
                 <section class="footer_ikon">
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://www.instagram.com/" aria-label="instagram ikon for footer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" aria-label="facebook ikon for footer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/" aria-label="linkedin ikon for footer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://no.pinterest.com/" aria-label="pinterest ikon for footer"><i class="fa-brands fa-pinterest"></i></a>
                 </section>
             </section>
         </section>

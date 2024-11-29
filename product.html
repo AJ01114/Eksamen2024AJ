@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="nb" itemscope itemtype="https://schema.org/WebPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Dette er en nettbutikk som tilbyr et bredt utvalg av klær til gode priser. Rask levering og enkel retur.">
+    <title>Logo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta itemprop="name" content="Logo - Nettbutikk for klær">
+    <meta itemprop="description" content="Finn de nyeste klærne hos Logo. Rask levering og gode priser.">
 </head>
 <body>
     <header>
-        <nav>
+        <nav  itemscope itemtype="https://schema.org/BreadcrumbList">
             <section class="header_loddrett">
                 <form class="søkefelt_header">
-                    <input type="text" placeholder="søk her">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                    <label for="search"></label>
+                    <input id="search" type="search" placeholder="søk her">
+                    <button aria-label="søke" type="submit"><i aria-label="viser at du kan trykke for og søke" class="fa-solid fa-magnifying-glass"></i> </button>
                 </form>
                 <section class="header_a">
-                    <a class="header_hjem" href="index.html">Hjem</a>
-                    <a class="header_produkter" href="index.html#beste_produkter">Produkter</a>
-                    <a class="header_logo" href="index.html"> <h1><strong>Logo</strong></h1></a>
-                    <a class="header_kategorier" href="index.html#populære_kategorier">Kategorier</a>
-                    <a class="header_kontaktoss" href="index.html#kontakt_oss">Kontakt oss</a>
+                    <a class="header_hjem" href="index.html" aria-label="Hjem knappen på forsiden">Hjem</a>
+                    <a class="header_produkter" href="index.html#beste_produkter" aria-label="produkt knappen på forsiden">Produkter</a>
+                    <a class="header_logo" href="index.html" aria-label="logo for hjemskjermen"> <h1><strong>Logo</strong></h1></a>
+                    <a class="header_kategorier" href="index.html#populære_kategorier" aria-label="kategori kanppen på forsiden">Kategorier</a>
+                    <a class="header_kontaktoss" href="index.html#kontakt_oss" aria-label="kontakt oss knappen på forsiden">Kontakt oss</a>
                 </section>
                 <section class="header_ikoner">
-                    <a class="header_ikon" href=""><i class="fa-regular fa-user"></i></a>
-                    <a class="header_ikon" href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a class="header_ikon" href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="header_ikon" href=""><i class="fa-regular fa-user" aria-label="bruker ikon for og se brukeren din"></i></a>
+                    <a class="header_ikon" href="#"><i class="fa-regular fa-heart" aria-label="likte produkter ikon for og se dine likte produkter"></i></a>
+                    <a class="header_ikon" href="checkout.html"><i class="fa-solid fa-cart-shopping" aria-label="kasseside ikon for og gå til kassesiden og betale"></i></a>
                 </section>
             </section>
         </nav>
-    </header>
+</header>
     <main>
-        <section class="produktmeny_topp">
+        <section aria-label="Navigasjon til produktnavn" class="produktmeny_topp">
             <a href="index.html"><p>Hjem</p></a>
             <i class="fa-solid fa-angle-right"></i>
             <a href="index.html#populære_kategorier"><p>Kategori</p></a>
@@ -44,8 +47,8 @@
                 <section class="produktkonteiner">
                     <aside class="produktkonteiner_aside">
                         <img class="bilder_små" src="bilder/bilde_produktside1.jpg" alt="nike-sko-hvitgul">
-                        <img class="bilder_små" src="bilder/bilde_produktside.jpg" alt="nike-sko-hvitgul">
-                        <img class="bilder_små" src="bilder/bilde_produktside.jpg" alt="nike-sko-hvitgul">
+                        <img class="bilder_små" src="bilder/bilde_produktside1.jpg" alt="nike-sko-hvitgul">
+                        <img class="bilder_små" src="bilder/bilde_produktside1.jpg" alt="nike-sko-hvitgul">
                     </aside>
                     <section class="stort_bilde">
                         <img class="bilder_stor" src="bilder/bilde_produktside.jpg" alt="nike-sko-hvitgul">
@@ -55,30 +58,29 @@
             <section class="produkt_pc">
                 <section class="produktsider_informasjon">
                     <h1>Produktnavn</h1>
-                    <a href="#"><h4>MERKENAVN</h4></a>
+                    <a href="#"><p>MERKENAVN</p></a>
                     <p>5 195 kr inkl. mva.</p>
                     <p>Farge: <strong>Blå</strong></p>
                 </section>
                 <section class="produktsider_størrelse">
-                <label for="størelse"></label>
-                    <select id="størelse">
-                        <option value="Velg Størrelse">Velg Størrelse</option>
-                        <option value="xs">xs</option>
-                        <option value="s">s</option>
-                        <option value="m">m</option>
-                        <option value="l">l</option>
-                        <option value="xl">xl</option>
-                    </select>
+                    <label for="størelse" class="sr_bare">velg en størelse</label>
+                        <select id="størelse">
+                            <option value="xs">xs</option>
+                            <option value="s">s</option>
+                            <option value="m">m</option>
+                            <option value="l">l</option>
+                            <option value="xl">xl</option>
+                        </select>
                 </section>
                 <section class="produktsider_ikontekst">
                     <button class="produktsider_tekst">Legg i handlekurv</button>
-                    <button class="produktsider_ikon"><i class="fa-regular fa-heart"></i></button>
+                    <button class="produktsider_ikon" aria-label="legg til favoritter"><i class="fa-regular fa-heart"></i></button>
                 </section>
                 <section>
                     <details class="produktsider_informasjonsboks">
                         <summary>
                             <strong>Materiale og vedlikehold</strong>
-                            <strong><i class="fa-solid fa-plus"></i></strong>
+                            <strong><i aria-label="for og indikere du kan trykke deg ned" class="fa-solid fa-plus"></i></strong>
                         </summary>
                         <ul>
                             <li>Overmateriale: 95% viskose, 5% elastan</li>
@@ -91,7 +93,7 @@
                     <details class="produktsider_informasjonsboks">
                         <summary>
                             <strong>Produktdetaljer</strong> 
-                            <strong><i class="fa-solid fa-plus"></i></strong>
+                            <strong><i aria-label="for og indikere du kan trykke deg ned" class="fa-solid fa-plus"></i></strong>
                         </summary>
                             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi</p>
                     </details>
@@ -100,7 +102,7 @@
                     <details class="produktsider_informasjonsboks">
                         <summary>
                             <strong>Størrelsestabell</strong>
-                            <strong><i class="fa-solid fa-plus"></i></strong>
+                            <strong><i aria-label="for og indikere du kan trykke deg ned" class="fa-solid fa-plus"></i></strong>
                         </summary>
                         <table>
                             <tr>
@@ -221,17 +223,18 @@
                 <section>
                     <details class="produktsider_informasjonsboks1">
                         <summary> 
-                                <p><strong>Anmeldelaser</strong></p>
-                                <strong><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>32</strong>
+                                <strong class="produktsider_informasjonsboks1_strong">Anmeldelaser</strong>
+                                <strong><i aria-label="stjerne for rangering" class="fa-solid fa-star"></i><i aria-label="stjerne for rangering" class="fa-solid fa-star"></i><i aria-label="stjerne for rangering" class="fa-solid fa-star"></i><i aria-label="stjerne for rangering" class="fa-solid fa-star"></i><i aria-label="tom stjerne for rangering" class="fa-regular fa-star"></i>32</strong>
                         </summary>
                         <section class="produktsider_informasjonsboks_anmeldelse">
                             <p>Rober Labrador</p>
                             <p>2024-10-02</p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                            <p aria-label="Rangering: 3 av 5 stjerner">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
                             <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
                         </section>
                     </details>
@@ -240,102 +243,102 @@
         </section>
         <section class="produktsider_lignende_produkter">
             <h1>Lignende produkter</h1>
-            <a href="#">Se flere lignene produkter<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" aria-label="se flere lignende produkter">Se flere lignene produkter<i aria-label="for og vise du kan gå til høyre" class="fa-solid fa-arrow-right"></i></a>
         </section>
         <section class="produktsider_boks">
             <section class="produktsider_kort">
                 <img src="bilder/nike-sko-Svartblå.jpg" alt="nike-sko-Svartblå">
-                <a class="produktsider_hjerte" href="#"><i class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
-                    <h3>Product name</h3>
+                <a class="produktsider_hjerte" href="#"><i aria-label="hjerte ikon for og like produktet" class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
+                    <p>Product name</p>
                     <p>Kr 1999</p>
                 </section>
                 <section class="produktsider_stjerner">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <p aria-label="Rangering: 4 av 5 stjerner">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     <strong>842 reviews</strong>
                 </section>
             </section>
-            
             <section class="produktsider_kort">
                 <img src="bilder/nike-sko-Svartblå.jpg" alt="nike-sko-Svartblå">
-                <a class="produktsider_hjerte" href="#"><i class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
-                    <h3>Product name</h3>
+                <a class="produktsider_hjerte" href="#"><i aria-label="hjerte ikon for og like produktet" class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
+                    <p>Product name</p>
                     <p>Kr 1999</p>
                 </section>
                 <section class="produktsider_stjerner">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <p aria-label="Rangering: 4 av 5 stjerner">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     <strong>842 reviews</strong>
                 </section>
             </section>
-
             <section class="produktsider_kort">
                 <img src="bilder/nike-sko-Svartblå.jpg" alt="nike-sko-Svartblå">
-                <a class="produktsider_hjerte" href="#"><i class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
-                    <h3>Product name</h3>
+                <a class="produktsider_hjerte" href="#"><i aria-label="hjerte ikon for og like produktet" class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
+                    <p>Product name</p>
                     <p>Kr 1999</p>
                 </section>
                 <section class="produktsider_stjerner">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <p aria-label="Rangering: 4 av 5 stjerner">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     <strong>842 reviews</strong>
                 </section>
             </section>
-
             <section class="produktsider_kort">
                 <img src="bilder/nike-sko-Svartblå.jpg" alt="nike-sko-Svartblå">
-                <a class="produktsider_hjerte" href="#"><i class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
-                    <h3>Product name</h3>
+                <a class="produktsider_hjerte" href="#"><i aria-label="hjerte ikon for og like produktet" class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
+                    <p>Product name</p>
                     <p>Kr 1999</p>
                 </section>
                 <section class="produktsider_stjerner">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <p aria-label="Rangering: 4 av 5 stjerner">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     <strong>842 reviews</strong>
                 </section>
             </section>
-
             <section class="produktsider_kort">
                 <img src="bilder/nike-sko-Svartblå.jpg" alt="nike-sko-Svartblå">
-                <a class="produktsider_hjerte" href="#"><i class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
-                    <h3>Product name</h3>
+                <a class="produktsider_hjerte" href="#"><i aria-label="hjerte ikon for og like produktet" class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
+                    <p>Product name</p>
                     <p>Kr 1999</p>
                 </section>
                 <section class="produktsider_stjerner">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <p aria-label="Rangering: 4 av 5 stjerner">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     <strong>842 reviews</strong>
                 </section>
             </section>
-
             <section class="produktsider_kort">
                 <img src="bilder/nike-sko-Svartblå.jpg" alt="nike-sko-Svartblå">
-                <a class="produktsider_hjerte" href="#"><i class="fa-regular fa-heart"></i></a>
-                <section class="produktsider_boks_informasjon">
-                    <h3>Product name</h3>
+                <a class="produktsider_hjerte" href="#"><i aria-label="hjerte ikon for og like produktet" class="fa-regular fa-heart"></i></a>                <section class="produktsider_boks_informasjon">
+                    <p>Product name</p>
                     <p>Kr 1999</p>
                 </section>
                 <section class="produktsider_stjerner">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i> 
+                    <p aria-label="Rangering: 4 av 5 stjerner">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     <strong>842 reviews</strong>
                 </section>
             </section>
@@ -348,27 +351,27 @@
         <section class="footer_pc">
             <section class="footer_bokser">
                 <section class="footer_kontakt1">
-                    <h3>KONTAKT</h3>
+                    <h2>KONTAKT</h2>
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i aria-hidden="true" class="fa-solid fa-location-dot"></i>
                         <p><strong>Adresse:</strong> </p>
                         <p>B R A Veien 4, 1757 Halden</p>
                     </section>
 
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-phone"></i>
+                        <i aria-hidden="true" class="fa-solid fa-phone"></i>
                         <p><strong>Telefon:</strong></p>
                         <p>69 60 80 00</p>
                     </section>
 
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i aria-hidden="true" class="fa-solid fa-envelope"></i>
                         <p><strong>E-post:</strong></p>
                         <p>halden@hiof.no</p>
                     </section>
 
                     <section class="footer_informasjon">
-                        <i class="fa-solid fa-clock"></i>
+                        <i aria-hidden="true" class="fa-solid fa-clock"></i>
                         <p><strong>Åpningstider:</strong></p>
                         <p>stenger 15:00</p>
                     </section>
@@ -384,15 +387,18 @@
                     <section class="footer_informasjon">
                         <p>Kontakt oss</p>
                     </section>
+                    <section class="footer_informasjon">
+                        <a href="WCAG-sjekklist/ WCAG-sjekkliste.pdf">WCAG-sjekklist</a>
+                    </section>
                 </section>
             </section>
             <section class="footer_ikons">
                 <h3>SOSIALE MEDIER</h3>
                 <section class="footer_ikon">
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://www.instagram.com/" aria-label="instagram ikon for footer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" aria-label="facebook ikon for footer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/" aria-label="linkedin ikon for footer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://no.pinterest.com/" aria-label="pinterest ikon for footer"><i class="fa-brands fa-pinterest"></i></a>
                 </section>
             </section>
         </section>

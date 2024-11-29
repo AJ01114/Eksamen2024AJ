@@ -6,6 +6,10 @@ body {
 
 /*sentrerer teksten*/
 
+.sr_bare {
+    display: none;
+}
+
 nav .header_loddrett {
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +51,7 @@ nav .header_loddrett {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 5px;
 }
 
 .header_a a{
@@ -56,12 +61,12 @@ nav .header_loddrett {
 
 .header_hjem {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .header_produkter {
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .header_logo {
@@ -70,12 +75,12 @@ nav .header_loddrett {
 
 .header_kategorier {
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .header_kontaktoss {
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /*Plassering på ikoner*/
@@ -101,13 +106,13 @@ nav .header_loddrett {
 .falsk_slider1 {
     border: 1px solid white;
     border-radius: 20px;
-    height: auto;
+    height: 500px;
     padding: 10px;
-    background-image: url(bilder_css/bakgrunnsbilde_slider.jpg);
+    background-image: url(bilder_css/bakgrunnsbilde_slider.webp);
     background-size: cover;
     margin-left: 5px;
     margin-right: 5px;
-    max-width: 970px;
+    max-width: 650px;
     justify-self: center;
     
     
@@ -117,10 +122,11 @@ nav .header_loddrett {
 
 .falsk_slider1_h1 {
     text-align: right;
-    padding-left: 165px;
+    width: 200px;
+    font-size: 28px;
+    margin-top: 30px;
+    justify-self: right;
     padding-right: 30px;
-    font-size: 36px;
-    margin-top: 70px;
 }
 
 .falsk_slider1_p {
@@ -188,6 +194,7 @@ nav .header_loddrett {
     gap: 10px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 .bestselgere {
@@ -199,6 +206,7 @@ nav .header_loddrett {
     width: 100px;
     gap: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /*Produktbokser*/
@@ -209,7 +217,7 @@ nav .header_loddrett {
     border-radius: 10px; 
     overflow: hidden; 
     width: 100%; 
-    max-width: 750px; 
+    max-width: 650px; 
   }
   
   .produkt_boks img {
@@ -225,11 +233,12 @@ nav .header_loddrett {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 24px; 
+    font-size: 16px; 
     color: #fff; 
     padding: 10px;
     border-radius: 50%; 
     background-color: rgb(122, 122, 122, 0.40);
+    cursor: pointer;
   }
 
 /*Informasjon til produktkort*/
@@ -238,7 +247,7 @@ nav .header_loddrett {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 750px;
+    max-width: 650px;
     
 }
 
@@ -326,7 +335,7 @@ margin-right: 5px;
 }
 
 .c_boks1::before, .c_boks::before, .c_boks3::before, .c_boks4::before, .c_boks5::before {
-    content: url(myimage.jpg);
+    content: url();
     position: absolute;
     width: 100%;
     height: 100%;
@@ -507,7 +516,7 @@ margin-right: 5px;
     margin-top: 40px;
 }
 
-.shoppingbag_informasjon h3 {
+.shoppingbag_informasjon h2 {
     margin-left: 60px;
     margin-top: 40px;
     margin-bottom: 15px;
@@ -554,13 +563,14 @@ margin-right: 5px;
     margin-left: 10px;
     margin-top: 10px;
     font-size: 12px;
+    text-decoration: solid;
 }
 
 .label_ikon {
     margin-left: 60px;
     display: flex;
     align-items: baseline;
-    gap: 10px;
+    gap: 30px;
 }
 
 .label_ikon i {
@@ -614,6 +624,13 @@ margin-right: 5px;
     text-decoration: none;
     padding: 15px;
     background-color: rgb(50, 50, 50);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.lagre_kontaktinformasjon_label {
+    max-width: 600px;
     margin-right: -30px;
 }
 
@@ -622,6 +639,7 @@ margin-right: 5px;
     margin-right: -30px;
     margin-top: 30px;
     margin-bottom: -10px;
+    cursor: pointer;
 }
 
 /*leveringsalternativ*/
@@ -640,14 +658,13 @@ margin-right: 5px;
 }
 
 .leverings_informasjon_p {
-    color: rgb(150, 150, 150);
+    color: rgb(100, 100, 100);
 }
 
 /*Betaling*/
 
 .checkout_betaling_header {
     margin-left: 30px;
-    margin-bottom: -10px;
     margin-top: 40px;
 }
 
@@ -683,9 +700,13 @@ margin-right: 5px;
 .checkout_betaling_price {
     font-size: 30px;
     text-align: center;
-    margin-right: -30px;
     margin-top: -20px;
     margin-bottom: -40px;
+}
+
+.checkout_betaling_label {
+    max-width: 600px;
+    margin-right: -30px;
 }
 
 .checkout_betaling_submit {
@@ -694,7 +715,9 @@ margin-right: 5px;
     text-decoration: none;
     padding: 15px;
     background-color: rgb(50, 50, 50);
-    margin-right: -30px;
+    width: 100%;
+    color: white;
+    
 }
 
 .checkout_betaling_center {
@@ -781,10 +804,14 @@ margin-right: 5px;
     font-size: 18px;
 }
 
-.produktsider_informasjon h4 {
+.produktsider_informasjon a p {
     font-size: 14px;
-    color: rgb(150, 150, 150);
+    color: rgb(100, 100, 100);
     font-weight: lighter;
+}
+
+.produktsider_informasjon a {
+    text-decoration: none;
 }
 
 .produktsider_informasjon p {
@@ -880,6 +907,10 @@ margin-right: 5px;
 
 .produktsider_informasjonsboks1 p {
     font-size: 12px;
+}
+
+.produktsider_informasjonsboks1_strong {
+    padding: 20px 0px;
 }
 
 .produktsider_informasjonsboks i {
@@ -1029,6 +1060,11 @@ footer p{
     margin-top: -10px;
 }
 
+.footer_kontakt1 h2 {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: -10px;
+}
 
 .footer_informasjon {
     display: flex;
@@ -1041,6 +1077,15 @@ footer p{
 .footer_informasjon p {
     font-weight: lighter;
 }
+
+.footer_informasjon a{
+    font-size: 12px;
+    margin: 12px;
+    margin-left: 0px;
+    text-decoration: none;
+    color: black;
+}
+
 
 .footer_informasjon i {
     font-size: 14px;
@@ -1059,9 +1104,35 @@ footer p{
     
 }
 
+.footer_ikon {
+    gap: 20px;
+}
+
 .footer_ikon i {
     color: black;
     margin-bottom: 100px;
+    padding: 10px;
+}
+
+.hopptiltopp {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.hopptiltopp a {
+    color: black;
+    text-decoration: none;
+}
+
+.hopptiltopp i {
+    border: 1px ;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(176, 176, 176, 0.6);
 }
 
 
@@ -1150,6 +1221,30 @@ footer p{
         font-size: 16px;
         margin: 0px;
     }
+
+    /*hover effekt på nav meny*/
+
+    .header_hjem:hover {
+        text-decoration: underline;
+    }
+
+    .header_produkter:hover {
+        text-decoration: underline;
+    }
+
+    .header_kategorier:hover {
+        text-decoration: underline;
+    }
+
+    .header_kontaktoss:hover {
+        text-decoration: underline;
+    }
+
+    .header_ikon:hover {
+        font-size: 24px;
+    }
+
+    /*falsk slider pc versjon*/
 
     .falsk_slider_pos {
         display: flex;
@@ -1297,6 +1392,10 @@ footer p{
     .pil_venstre {
         left: 10px;
     }
+
+    /*Beste Produkter PC versjon*/
+
+    /*Kategorier beste produkter pc*/
       
     .kategorier_beste_produkter {
         gap: 5px;
@@ -1314,8 +1413,28 @@ footer p{
         gap: 5px;
     }
 
+    /*Kategorier beste produkter pc hover*/
+
+    .nytt_produkt:hover {
+        background-color: #787878;
+        color: white;
+    }
+
+    .bestselgere:hover{
+        background-color: #787878;
+        color: #fff;
+    }
+
+    /*kategorier mest populære produkter pc*/
+
     .produkt_boks{
-        max-width: 330px;
+        max-width: 310px;
+        height: 310px;
+    }
+
+    .produkt_boks img{
+        max-width: 310px;
+        height: 310px;
     }
 
     .produkt_informasjon{
@@ -1331,6 +1450,12 @@ footer p{
         margin-left: 1rem;
         margin-right: 1rem;
         gap: 10px;
+    }
+
+    /*kategorier mest populære produkter pc hover*/
+
+    .produkt_boks i:hover {
+        background-color:  rgba(255, 54, 54, 0.4);
     }
 
     .Anmeldelser_overskrift h1 {
@@ -1489,6 +1614,12 @@ footer p{
         margin-left: -30px;
         margin-top: 20px;
     }
+
+    /*Dine opplysninger pc hover*/
+
+    .lagre_kontaktinformasjon:hover {
+        background-color: #787878;
+    }
     
     /*Levering*/
 
@@ -1511,7 +1642,7 @@ footer p{
         top: 0px;
         }
 
-    /*checkout*/
+    /*checkout pc*/
 
     .checkout_betaling_u_c{
         display: flex;
@@ -1554,6 +1685,12 @@ footer p{
         justify-self: center;
     }
 
+    /*checkout pc hover*/
+
+    .checkout_betaling_submit:hover {
+        background-color: #787878;
+    }
+
     /*produktside*/
 
     .produktmeny_topp{
@@ -1581,6 +1718,26 @@ footer p{
 
     .produkt_pc{
         width: 400px;
+    }
+
+    /*produktside pc hover*/
+
+    .produktsider_størrelse select:hover {
+        border: 2px solid black;
+        border-radius: 0px;
+        padding: 10.5px 4px;
+    }
+
+    .produktsider_tekst:hover {
+        background-color: #787878;
+    }
+
+    .produktsider_ikon:hover {
+        color: red;
+    }
+
+    .produktsider_hjerte i:hover{
+        background-color:  rgba(255, 54, 54, 0.4);
     }
 
     .produktsider_lignende_produkter {
